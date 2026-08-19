@@ -1,0 +1,351 @@
+[
+  {
+    "id": "amlo",
+    "label": "AMLO",
+    "sub": "expresidente",
+    "type": "person",
+    "x": 240,
+    "y": 170,
+    "desc": "Andrés Manuel López Obrador, presidente de México 2018–2024. Nodo político/familiar de origen; no se presume conocimiento de conductas de terceros."
+  },
+  {
+    "id": "andy",
+    "label": "Andrés M.\nLópez Beltrán",
+    "sub": "“Andy”",
+    "type": "person",
+    "x": 420,
+    "y": 115,
+    "desc": "Hijo de AMLO. Secretario de Organización de Morena desde 2024; dejó la dirigencia en 2026 y prepara una candidatura federal para 2027, según Reuters.",
+    "src": ["S3", "S24"]
+  },
+  {
+    "id": "gonzalo",
+    "label": "Gonzalo\nLópez Beltrán",
+    "sub": "“Bobby”",
+    "type": "person",
+    "x": 420,
+    "y": 215,
+    "desc": "Hijo de AMLO. Aparece en reportajes sobre el círculo empresarial de Amílcar Olán; las conexiones de negocio atribuidas mediante audios se mantienen como reportadas/alegadas.",
+    "src": ["S9", "S21"]
+  },
+  {
+    "id": "jose",
+    "label": "José Ramón\nLópez Beltrán",
+    "sub": "hijo de AMLO",
+    "type": "person",
+    "x": 400,
+    "y": 320,
+    "desc": "Hijo mayor de AMLO. Su residencia en Houston y trabajo en KEI Partners generaron señalamientos de conflicto de interés; él sostuvo que sus ingresos provenían de su trabajo privado.",
+    "src": ["S5", "S6"]
+  },
+  {
+    "id": "morena",
+    "label": "Morena",
+    "sub": "partido",
+    "type": "org",
+    "x": 205,
+    "y": 70,
+    "desc": "Partido fundado por López Obrador. Andy fue secretario de Organización de 2024 a 2026.",
+    "src": ["S3", "S24"]
+  },
+  {
+    "id": "choc",
+    "label": "Chocolates\nRocío",
+    "sub": "negocio familiar",
+    "type": "company",
+    "x": 540,
+    "y": 55,
+    "desc": "Proyecto familiar asociado a la finca de cacao heredada por los hijos mayores, según verificación de AP. Se incluye como actividad empresarial conocida, no como anomalía.",
+    "src": ["S22"]
+  },
+  {
+    "id": "olan",
+    "label": "Amílcar\nOlán",
+    "sub": "empresario",
+    "type": "person",
+    "x": 610,
+    "y": 180,
+    "desc": "Empresario tabasqueño descrito por MCCI como amigo de Andy y Gonzalo. MCCI documenta propiedades, empresas y contratos; también aclara que no afirmó que fuera prestanombre de los hijos ni que sus terrenos les pertenecieran.",
+    "src": ["S7", "S8", "S21"]
+  },
+  {
+    "id": "romedic",
+    "label": "Romedic",
+    "sub": "empresa",
+    "type": "company",
+    "x": 780,
+    "y": 105,
+    "desc": "Empresa atribuida a Olán en investigaciones de MCCI, beneficiaria de contratos estatales para insumos médicos financiados con recursos federales transferidos.",
+    "src": ["S7"]
+  },
+  {
+    "id": "insabi",
+    "label": "INSABI",
+    "sub": "institución extinta",
+    "type": "org",
+    "x": 925,
+    "y": 80,
+    "desc": "Fuente federal de recursos transferidos que, según MCCI, terminaron financiando contratos estatales de Romedic. No equivale a un contrato directo INSABI→Romedic.",
+    "src": ["S7"]
+  },
+  {
+    "id": "dosbocas",
+    "label": "Dos Bocas",
+    "sub": "refinería / proyecto",
+    "type": "project",
+    "x": 800,
+    "y": 205,
+    "desc": "Megaproyecto energético. MCCI documentó que Olán adquirió un terreno cercano que posteriormente fue rentado por un contratista de la refinería; el hecho no prueba tráfico de influencias.",
+    "src": ["S7"]
+  },
+  {
+    "id": "portacelis",
+    "label": "Portacelis\nGas & Oil",
+    "sub": "importadora",
+    "type": "company",
+    "x": 765,
+    "y": 315,
+    "desc": "Importadora de combustible. MCCI la vincula empresarialmente al círculo de Olán y reporta que tuvo como proveedor a Ikon Midstream. La relación de Olán con la compañía requiere profundización registral.",
+    "src": ["S10"]
+  },
+  {
+    "id": "ikon",
+    "label": "Ikon\nMidstream",
+    "sub": "trader Houston",
+    "type": "company",
+    "x": 930,
+    "y": 315,
+    "desc": "Comercializadora de Houston investigada por autoridades estadounidenses y mexicanas por operaciones de combustible. La empresa niega haber cometido irregularidades.",
+    "src": ["S11", "S12"]
+  },
+  {
+    "id": "raid",
+    "label": "Cateo HSI\nIkon",
+    "sub": "14 abr 2026",
+    "type": "event",
+    "x": 1080,
+    "y": 250,
+    "desc": "HSI ejecutó una orden federal de cateo en las oficinas de Ikon. Reuters no pudo confirmar la causa exacta ni el material incautado; no hubo arrestos.",
+    "src": ["S11"]
+  },
+  {
+    "id": "intanza",
+    "label": "Intanza",
+    "sub": "cliente de Ikon",
+    "type": "company",
+    "x": 1080,
+    "y": 370,
+    "desc": "Empresa mexicana receptora de cargamentos de Ikon. Fuentes de seguridad mexicanas citadas por Reuters la describen como presunta fachada del CJNG; la atribución se mantiene como alegación.",
+    "src": ["S12", "S13"]
+  },
+  {
+    "id": "cjng",
+    "label": "CJNG",
+    "sub": "cartel",
+    "type": "org",
+    "x": 1035,
+    "y": 495,
+    "desc": "Organización criminal sancionada por EE.UU. Treasury. Autoridades estadounidenses documentan al robo/contrabando de combustible como fuente relevante de ingresos criminales.",
+    "src": ["S14", "S15"]
+  },
+  {
+    "id": "treasury",
+    "label": "Treasury /\nOFAC",
+    "sub": "EE.UU.",
+    "type": "org",
+    "x": 1130,
+    "y": 575,
+    "desc": "Tesoro de EE.UU. ha sancionado redes vinculadas al CJNG por robo y contrabando transfronterizo de combustible.",
+    "src": ["S14", "S15"]
+  },
+  {
+    "id": "huachicol",
+    "label": "HUACHICOL\nFISCAL",
+    "sub": "ecosistema",
+    "type": "concept",
+    "x": 805,
+    "y": 500,
+    "desc": "Concepto operacional: contrabando/importación de combustibles con clasificación o documentación fraudulenta para evadir impuestos. En este mapa es un ecosistema, no una acusación a cada nodo conectado.",
+    "src": ["S13", "S14", "S18", "S23"]
+  },
+  {
+    "id": "fgr",
+    "label": "FGR",
+    "sub": "Fiscalía",
+    "type": "org",
+    "x": 650,
+    "y": 585,
+    "desc": "Fiscalía General de la República. El 17 ago 2026 negó contar con datos de prueba legalmente suficientes para iniciar una investigación contra Andy por delitos de hidrocarburos.",
+    "src": ["S16"]
+  },
+  {
+    "id": "fgrdeny",
+    "label": "FGR: no hay\ndatos suficientes",
+    "sub": "17 ago 2026",
+    "type": "event",
+    "x": 505,
+    "y": 555,
+    "desc": "Pronunciamiento reportado: la FGR negó que tuviera testigos protegidos que sustentaran una investigación contra Andy y dijo no contar con datos de prueba con fuerza legal suficiente para iniciar una indagatoria.",
+    "src": ["S16"]
+  },
+  {
+    "id": "testimony",
+    "label": "Testimonio\nreportado",
+    "sub": "“tema de Andy”",
+    "type": "event",
+    "x": 615,
+    "y": 445,
+    "desc": "El País reportó que un testimonio incorporado a la carpeta del huachicol fiscal relató que un operador dijo que invocaría el nombre de “Andy” ante el exsecretario de Marina. Esto no demuestra que Andy conociera, autorizara o participara en la operación; además, la FGR negó posteriormente contar con evidencia suficiente para investigarlo.",
+    "src": ["S17", "S16"]
+  },
+  {
+    "id": "visa",
+    "label": "Visa EE.UU.\nrevocada",
+    "sub": "ago 2026",
+    "type": "event",
+    "x": 475,
+    "y": 15,
+    "desc": "Andy anunció que EE.UU. revocó su visa. El gobierno estadounidense no hizo pública la razón específica. Cualquier enlace causal con huachicol, corrupción o presión política permanece sin demostrar.",
+    "src": ["S1", "S2"]
+  },
+  {
+    "id": "state",
+    "label": "State\nDepartment",
+    "sub": "EE.UU.",
+    "type": "org",
+    "x": 635,
+    "y": 20,
+    "desc": "El Departamento de Estado no comenta casos individuales por confidencialidad; sus funcionarios han señalado de forma general que decisiones de visa son de seguridad/nacional interest.",
+    "src": ["S1"]
+  },
+  {
+    "id": "house",
+    "label": "Casa Houston",
+    "sub": "residencia 2019",
+    "type": "event",
+    "x": 555,
+    "y": 350,
+    "desc": "Residencia ocupada por José Ramón y su familia; el inmueble pertenecía a un exejecutivo de Baker Hughes, según reportes citados por Reuters.",
+    "src": ["S5"]
+  },
+  {
+    "id": "schilling",
+    "label": "Keith\nSchilling",
+    "sub": "ex Baker Hughes",
+    "type": "person",
+    "x": 690,
+    "y": 360,
+    "desc": "Exejecutivo de Baker Hughes y propietario de la casa de Houston citada en la controversia. Reuters reportó que dijo no saber a quién se rentaba.",
+    "src": ["S5"]
+  },
+  {
+    "id": "baker",
+    "label": "Baker Hughes",
+    "sub": "energía",
+    "type": "company",
+    "x": 835,
+    "y": 390,
+    "desc": "Empresa de servicios petroleros con relación contractual histórica con Pemex. La coincidencia casa/contratos originó acusaciones de conflicto de interés; Pemex y la empresa negaron irregularidades.",
+    "src": ["S5"]
+  },
+  {
+    "id": "pemex",
+    "label": "PEMEX",
+    "sub": "empresa estatal",
+    "type": "org",
+    "x": 820,
+    "y": 610,
+    "desc": "Empresa petrolera estatal; nodo central para contratos, huachicol y energía. No se infiere responsabilidad institucional por vínculos con proveedores individuales.",
+    "src": ["S5", "S18"]
+  },
+  {
+    "id": "kei",
+    "label": "KEI Partners",
+    "sub": "Houston",
+    "type": "company",
+    "x": 515,
+    "y": 420,
+    "desc": "Empresa en la que José Ramón afirmó trabajar desde 2020 como asesor legal de desarrollo y construcción.",
+    "src": ["S6"]
+  },
+  {
+    "id": "chavez",
+    "label": "Daniel Chávez\nMorán",
+    "sub": "Grupo Vidanta",
+    "type": "person",
+    "x": 370,
+    "y": 455,
+    "desc": "Empresario fundador de Grupo Vidanta. Fue supervisor/representante honorario en el Tren Maya; KEI Partners fue vinculada a integrantes de su familia.",
+    "src": ["S6"]
+  },
+  {
+    "id": "tren",
+    "label": "Tren Maya",
+    "sub": "megaproyecto",
+    "type": "project",
+    "x": 240,
+    "y": 500,
+    "desc": "Megaproyecto federal. Se conecta factual/indirectamente con Daniel Chávez y, vía reportajes, con intereses de suministro de balasto atribuidos al círculo de Olán.",
+    "src": ["S6", "S9"]
+  },
+  {
+    "id": "ojeda",
+    "label": "Rafael Ojeda\nDurán",
+    "sub": "exsecretario Marina",
+    "type": "person",
+    "x": 475,
+    "y": 665,
+    "desc": "Secretario de Marina durante el gobierno de AMLO. Autoridades dijeron en 2025 que había solicitado investigar posibles delitos dentro de la Armada; reportajes posteriores han citado testimonios que buscan establecer qué conocía.",
+    "src": ["S18", "S17"]
+  },
+  {
+    "id": "marina",
+    "label": "SEMAR /\nMarina",
+    "sub": "institución",
+    "type": "org",
+    "x": 610,
+    "y": 705,
+    "desc": "Institución que asumió funciones relevantes en puertos/aduanas durante el sexenio de AMLO. Investigaciones posteriores alcanzaron a oficiales activos y retirados.",
+    "src": ["S18", "S23"]
+  },
+  {
+    "id": "fariasm",
+    "label": "Manuel R.\nFarías Laguna",
+    "sub": "vicealmirante",
+    "type": "person",
+    "x": 760,
+    "y": 710,
+    "desc": "Vicealmirante detenido en 2025 dentro de una investigación por contrabando de combustible; AP lo identifica como familiar del exsecretario de Marina.",
+    "src": ["S19"]
+  },
+  {
+    "id": "challenge",
+    "label": "Challenge\nProcyon",
+    "sub": "decomiso 2025",
+    "type": "event",
+    "x": 900,
+    "y": 705,
+    "desc": "Buque asociado a uno de los decomisos que detonaron investigaciones de huachicol fiscal. Autoridades reportaron casi 63 mil barriles de diésel declarado como petroquímico exento.",
+    "src": ["S18", "S13"]
+  },
+  {
+    "id": "milit",
+    "label": "Militarización\naduanas/puertos",
+    "sub": "política 2020–22",
+    "type": "event",
+    "x": 300,
+    "y": 680,
+    "desc": "Transferencia progresiva de control de puertos y aduanas a Fuerzas Armadas bajo AMLO con el objetivo declarado de combatir corrupción y contrabando. Investigaciones posteriores detectaron redes dentro de algunas instalaciones.",
+    "src": ["S20", "S23"]
+  },
+  {
+    "id": "sedena",
+    "label": "SEDENA",
+    "sub": "institución",
+    "type": "org",
+    "x": 180,
+    "y": 725,
+    "desc": "Ejército/Defensa; recibió responsabilidades aduaneras. El País reportó investigaciones y anomalías en Matamoros tras la militarización.",
+    "src": ["S20"]
+  }
+]
