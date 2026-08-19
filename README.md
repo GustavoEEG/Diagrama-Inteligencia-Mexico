@@ -2,6 +2,12 @@
 
 Repositorio vivo para construir y versionar un **Intelligence Link Analysis** sobre actores, empresas, instituciones, eventos, proyectos, anomalías e hipótesis relacionadas con México.
 
+## 🕸️ Abrir Intelligence Link Analysis
+
+**GitHub Pages:** https://gustavoeeg.github.io/Diagrama-Inteligencia-Mexico/
+
+> El enlace quedará operativo cuando GitHub Pages esté habilitado con **Source: GitHub Actions** y se complete el primer despliegue.
+
 ## Estado inicial
 
 **Ola 0 + Ola 1** · corte semilla: **18 de agosto de 2026**.
@@ -52,6 +58,6 @@ Cada ola debe preferir una rama temática, por ejemplo:
 - `agent/wave-04-customs-navy`
 - `agent/red-team-h01`
 
-## Visualización
+## Publicación
 
-El tablero carga los archivos `data/*.json` por HTTP. Para desarrollo puede servirse con cualquier servidor estático; para publicación, el repo está preparado para usar GitHub Pages desde la raíz de la rama principal una vez que se habilite.
+La publicación está automatizada mediante `.github/workflows/deploy-pages.yml`. Cada push a `main` empaqueta el sitio y lo despliega a GitHub Pages usando las acciones oficiales de GitHub.
