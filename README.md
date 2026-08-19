@@ -6,7 +6,7 @@ Repositorio vivo para construir y versionar un **Intelligence Link Analysis** so
 
 **GitHub Pages:** https://gustavoeeg.github.io/Diagrama-Inteligencia-Mexico/
 
-> El enlace quedará operativo cuando GitHub Pages esté habilitado con **Source: GitHub Actions** y se complete el primer despliegue.
+> Publicación prevista directamente desde `main` → `/ (root)` mediante GitHub Pages. El repositorio incluye `.nojekyll` y no requiere un workflow propio de GitHub Actions para servir este sitio estático.
 
 ## Estado inicial
 
@@ -60,4 +60,10 @@ Cada ola debe preferir una rama temática, por ejemplo:
 
 ## Publicación
 
-La publicación está automatizada mediante `.github/workflows/deploy-pages.yml`. Cada push a `main` empaqueta el sitio y lo despliega a GitHub Pages usando las acciones oficiales de GitHub.
+Configura GitHub Pages con:
+
+- **Source:** `Deploy from a branch`
+- **Branch:** `main`
+- **Folder:** `/ (root)`
+
+Después, cada actualización fusionada a `main` quedará disponible desde la URL de GitHub Pages del proyecto.
