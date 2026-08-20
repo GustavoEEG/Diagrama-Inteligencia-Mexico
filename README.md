@@ -16,15 +16,15 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 ## Estado vigente
 
-**Ola 0–14** · corte de investigación: **20 de agosto de 2026**.
+**Ola 0–15** · corte de investigación: **20 de agosto de 2026**.
 
-Tras integrar la Ola 14, el universo validado contiene:
+Tras integrar la Ola 15, el universo validado contiene:
 
-- **146 nodos**;
-- **252 relaciones**;
-- **135 fuentes registradas**;
-- **27 hipótesis de trabajo**;
-- **13 overlays**;
+- **155 nodos**;
+- **266 relaciones**;
+- **149 fuentes registradas**;
+- **29 hipótesis de trabajo**;
+- **14 overlays**;
 - escala epistemológica A–G;
 - análisis reproducible A–C vs A–G;
 - control de baseline, tasa base, visibilidad y denominador;
@@ -35,7 +35,8 @@ Tras integrar la Ola 14, el universo validado contiene:
 - separación explícita entre **universo de inteligencia, acusación, imputación, proceso y condena**;
 - modelado de sanciones/suspensiones por su **causal jurídica exacta**;
 - separación de pistas de enforcement que comparten intermediario pero no transacción;
-- control de **provenance entre listas** para distinguir convergencia independiente de reciclaje de inteligencia.
+- control de **provenance entre listas** para distinguir convergencia independiente de reciclaje de inteligencia;
+- separación entre **continuidad operacional longitudinal** y **continuidad de conducta ilícita**.
 
 > Los conteos son verificados por Actions. Si difieren, prevalece `scripts/validate_graph.py`.
 
@@ -54,6 +55,7 @@ Tras integrar la Ola 14, el universo validado contiene:
 - **Ola 12** — [`research/wave-12-extract-20-tomes/report.md`](research/wave-12-extract-20-tomes/report.md): identifica a **Karina Melissa Guerrero Rodríguez como proveedor histórico reportado de Maquiladora en 2020**, pero conserva abierta la identidad del proveedor específico al que alude la causa 325. Incorpora la carpeta `FED/TAM/REY/334/2021`, la rama Nexoil/Karina/Marvic y **Grupo Potesta** como nodo comercial-financiero reportado de la 325 con operaciones hacia **Vector Casa de Bolsa**. Se añaden H22 (recurrencia histórica) y H23 (proveedor histórico ≠ proveedor imputado sin documento puente).
 - **Ola 13** — [`research/wave-13-potesta-vector-555/report.md`](research/wave-13-potesta-vector-555/report.md): somete a falsación la rama Potesta→Vector y el universo CFIC 555/108. Confirma actividad regulatoria real de Potesta, corrige su suspensión SAT de 2021 a causal IV por inactividad >12 meses, separa la pista FinCEN/opioides de la pista mexicana Potesta/huachicol y formaliza H24 (convergencia CFIC-108) y H25 (separación de pistas Vector).
 - **Ola 14** — [`research/wave-14-cross-list-intelligence/report.md`](research/wave-14-cross-list-intelligence/report.md): cruza CFIC-108, FEMDO-353 publicado parcialmente, 334/2021 y el grafo. El anexo 353 incompleto impide un triple match nominal nuevo; el cruce 334∩108 selecciona **Energética Carvel** como primer target nuevo con antecedente adicional de 2018. Se añaden H26 (recurrencia como priorizador) y H27 (reciclaje histórico como explicación rival), con Diesel Max/Faja/Paje como controles.
+- **Ola 15** — [`research/wave-15-carvel-longitudinal/report.md`](research/wave-15-carvel-longitudinal/report.md): reconstruye la continuidad Carvel 2016–2026. Confirma permisos SENER pre-2018, continuidad de Carlos Alberto Velázquez Nieto, el brazo transportista Porteadora Carvel y corrige `H/22701/COM/2019` a **Vigente** según el listado actual de CRE. La continuidad operacional se separa de cualquier continuidad ilícita no demostrada; nacen H28 y H29 y Carvel Energy Inc. queda como target estadounidense prioritario.
 
 ## Arquitectura del conocimiento
 
@@ -79,7 +81,8 @@ index.html
 │       ├── wave-12-extract-20-tomes.json
 │       ├── wave-12-vector-context.json
 │       ├── wave-13-potesta-vector-555.json
-│       └── wave-14-cross-list-intelligence.json
+│       ├── wave-14-cross-list-intelligence.json
+│       └── wave-15-carvel-longitudinal.json
 ├── research/
 │   └── wave-XX-*/
 ├── scripts/
@@ -168,12 +171,21 @@ anexo incompleto → no inferir ausencia nominal
 actividad regulada real + investigación recurrente pueden coexistir
 ```
 
+Desde Ola 15:
+
+```text
+continuidad operacional ≠ continuidad ilícita
+mismo operador/empresa a través del tiempo ≠ mismo hecho delictivo a través del tiempo
+proyecto de caducidad ≠ caducidad final sin resolución/estatus vigente reconciliado
+integración vertical alegada → registro corporativo + pedimento + transporte + almacenamiento antes de inferir flujo
+```
+
 La existencia de una conexión debe probarse por separado de la interpretación causal de esa conexión. En expedientes grandes, **primero se clasifica el rol de cada entidad y después se calcula o interpreta la red**.
 
 ## Flujo de investigación
 
 ```text
-investigación → fuentes → independencia de fuentes → classification de rol → grafo A–C/A–G → puentes → red team/baseline → denominador/visibilidad → provenance entre listas → hipótesis → targets documentales → overlay → PR → validación → merge
+investigación → fuentes → independencia de fuentes → clasificación de rol → grafo A–C/A–G → puentes → red team/baseline → denominador/visibilidad → provenance entre listas → continuidad temporal → hipótesis → targets documentales → overlay → PR → validación → merge
 ```
 
 ## Validación y análisis automáticos
