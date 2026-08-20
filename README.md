@@ -21,7 +21,7 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 Tras integrar la Ola 7, el universo esperado contiene:
 
 - **84 nodos**;
-- **122 relaciones**;
+- **123 relaciones**;
 - **65 fuentes registradas**;
 - **13 hipótesis de trabajo**;
 - **5 overlays**;
