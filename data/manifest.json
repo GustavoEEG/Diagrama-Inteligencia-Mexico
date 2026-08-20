@@ -1,0 +1,12 @@
+{
+  "base": {
+    "sources": "data/sources.json",
+    "nodes": "data/nodes.json",
+    "edges": "data/edges.json",
+    "hypotheses": "data/hypotheses.json",
+    "timeline": "data/timeline.json"
+  },
+  "overlays": [
+    "data/waves/wave-03-portacelis-operators.json"
+  ]
+}
