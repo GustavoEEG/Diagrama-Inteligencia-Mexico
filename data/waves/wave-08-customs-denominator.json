@@ -1,0 +1,212 @@
+{
+  "wave": "08",
+  "title": "Customs Denominator / Full Portacelis Pediment Set",
+  "cutoff": "2026-08-19",
+  "sources": {
+    "S66": {
+      "t": "ANAM · Información pública de comercio exterior 2025 / confidencialidad de contribuyentes",
+      "d": "consultado 19 ago 2026",
+      "u": "https://www.anam.gob.mx/informacion-publica-de-comercio-exterior-2025/"
+    },
+    "S67": {
+      "t": "ANAM · Solicitud de Operaciones de Comercio Exterior para operaciones propias",
+      "d": "consultado 19 ago 2026",
+      "u": "https://www.anam.gob.mx/solicitud-de-operaciones-de-comercio-exterior/"
+    },
+    "S68": {
+      "t": "Panjiva · perfil comprador Portacelis / registros disponibles y muestra Benbros",
+      "d": "consultado 19 ago 2026",
+      "u": "https://es.panjiva.com/Portacelis-Gas-And-Oil-S-A-De-C-V/225202769"
+    },
+    "S69": {
+      "t": "N+ · Cómo introducía combustible a México Portacelis Gas & Oil",
+      "d": "19 sep 2025",
+      "u": "https://www.nmas.com.mx/economia/asi-introducia-combustible-a-mexico-la-empresa-portacelis-gas-and-oil/"
+    },
+    "S70": {
+      "t": "MCCI · reconstrucción de operaciones Portacelis y proveedores de combustible",
+      "d": "27 jul 2026",
+      "u": "https://contralacorrupcion.mx/huachicolera-investigada-por-el-fbi-surtio-a-empresa-ligada-a-amilcar-olan-el-amigo-de-andy-y-gonzalo/"
+    },
+    "S71": {
+      "t": "ImportKey · Portacelis / ocho embarques MG Energy visibles en comercio marítimo",
+      "d": "consultado 19 ago 2026",
+      "u": "https://importkey.com/countries/mexico/portacelis-gas-and-oil-s-a"
+    },
+    "S72": {
+      "t": "Código Magenta · reporta oficio FEMDO con 353 personas y entidades de interés",
+      "d": "jul 2026",
+      "u": "https://codigomagenta.com.mx/fgr-investiga-huachi-refineria/"
+    },
+    "S73": {
+      "t": "INEGI · minuta de comité que identifica a Edna Patricia Cepeda Morales como titular del CFIC/FGR",
+      "d": "24 sep 2025",
+      "u": "https://chatintercensal.inegi.org.mx/Documentos/Gobierno/minutas/2025/cteisp_24092025.pdf"
+    }
+  },
+  "nodes": [
+    {
+      "id": "portacelis_customs_denominator",
+      "label": "Denominador aduanal\nPortacelis",
+      "sub": "incompleto en OSINT",
+      "type": "concept",
+      "x": 1530,
+      "y": 235,
+      "desc": "Ola 8 intentó reconstruir el universo completo de pedimentos, patentes y rutas de Portacelis para probar H13. No fue posible obtener un denominador reproducible en fuentes abiertas: MCCI habla de 444 operaciones, Panjiva expone un universo parcial de registros disponibles y N+ reconstruye una ventana distinta de ferrotanques. Esas cifras describen unidades, coberturas y periodos diferentes y no deben tratarse como conteos directamente comparables.",
+      "src": ["S66", "S67", "S68", "S69", "S70", "S71"]
+    },
+    {
+      "id": "anam_customs_visibility",
+      "label": "Visibilidad ANAM",
+      "sub": "datos públicos ≠ pedimentos nominativos completos",
+      "type": "concept",
+      "x": 1675,
+      "y": 235,
+      "desc": "ANAM publica archivos de comercio exterior, pero la información identificable de contribuyentes está sujeta a confidencialidad/secreto fiscal. La consulta o extracción de operaciones propias requiere mecanismos autenticados del contribuyente. Por ello el universo nominativo completo de pedimentos de una empresa no puede reconstruirse responsablemente sólo con el dataset público abierto.",
+      "src": ["S66", "S67"]
+    },
+    {
+      "id": "portacelis_supplier_universe",
+      "label": "Proveedores Portacelis",
+      "sub": "5 reportados · 4 reproducidos",
+      "type": "concept",
+      "x": 1510,
+      "y": 135,
+      "desc": "N+ reportó que Portacelis compró diésel a cinco comercializadoras de Texas. En fuentes indexadas de esta ola se pudieron reproducir nominalmente cuatro: Ikon Midstream, Brownsville GTR, MG Energy y Benbros Enterprises. El quinto proveedor no fue identificado de manera reproducible y no se inventa ni se modela como empresa real.",
+      "src": ["S68", "S69", "S70"]
+    },
+    {
+      "id": "femdo_353_lead",
+      "label": "Lead FEMDO · 353",
+      "sub": "oficio reportado · no obtenido",
+      "type": "event",
+      "x": 1585,
+      "y": 420,
+      "desc": "Código Magenta afirma haber revisado un oficio de FEMDO fechado el 24 sep 2025 que enlistaría 353 personas, empresas y agencias de interés e incluiría, entre otras, Portacelis, Ingemar e Ikon. Ola 8 no obtuvo el oficio primario ni encontró confirmación oficial pública de la lista. INEGI sí corrobora independientemente que la funcionaria descrita como destinataria encabezaba entonces el Centro Federal de Inteligencia Criminal; eso no autentica el contenido del oficio. El nodo es un lead C para adquisición documental, no un hecho oficial.",
+      "src": ["S72", "S73"]
+    }
+  ],
+  "edges": [
+    {
+      "id": "w8e01",
+      "a": "portacelis",
+      "b": "portacelis_customs_denominator",
+      "g": "D",
+      "rel": "intento de reconstrucción exhaustiva",
+      "why": "La Ola 8 intenta pasar de muestras de pedimentos a un universo completo para probar H13. Las fuentes abiertas observadas no ofrecen un denominador nominativo íntegro y comparable.",
+      "src": ["S68", "S69", "S70", "S71"]
+    },
+    {
+      "id": "w8e02",
+      "a": "anam_customs_visibility",
+      "b": "portacelis_customs_denominator",
+      "g": "B",
+      "rel": "restricción oficial de visibilidad",
+      "why": "ANAM explica que los datos identificables de contribuyentes están protegidos y que el acceso a operaciones propias usa mecanismos autenticados. Esto limita una reconstrucción OSINT exhaustiva por empresa.",
+      "src": ["S66", "S67"]
+    },
+    {
+      "id": "w8e03",
+      "a": "portacelis_customs_denominator",
+      "b": "customs_baseline_panel",
+      "g": "D",
+      "rel": "H13 bloqueada sin denominador",
+      "why": "El panel 3677/3830/3807 sirve como control cualitativo, pero no permite calcular enriquecimiento sin conocer todas las patentes/operaciones de Portacelis y la tasa base de agentes comparables.",
+      "src": ["S66", "S67", "S68", "S69", "S70"]
+    },
+    {
+      "id": "w8e04",
+      "a": "portacelis",
+      "b": "portacelis_supplier_universe",
+      "g": "C",
+      "rel": "cinco proveedores Texas reportados",
+      "why": "N+ reporta cinco comercializadoras texanas; las fuentes indexadas permiten reproducir cuatro nombres. El total de cinco permanece atribuido al reportaje hasta obtener la base completa.",
+      "src": ["S69", "S70"]
+    },
+    {
+      "id": "w8e05",
+      "a": "portacelis_supplier_universe",
+      "b": "ikon",
+      "g": "C",
+      "rel": "proveedor reproducido · primera carga reportada",
+      "why": "MCCI identifica a Ikon como proveedor de la primera importación de Portacelis. La relación comercial ya existe en el grafo; aquí se incorpora al universo de proveedores observables.",
+      "src": ["S70"]
+    },
+    {
+      "id": "w8e06",
+      "a": "portacelis_supplier_universe",
+      "b": "brownsville_gtr",
+      "g": "B",
+      "rel": "proveedor reproducido · corredor ferroviario",
+      "why": "MCCI y registros comerciales documentan a Brownsville GTR como proveedor dominante de las operaciones ferroviarias reconstruidas de Portacelis.",
+      "src": ["S70"]
+    },
+    {
+      "id": "w8e07",
+      "a": "portacelis_supplier_universe",
+      "b": "mg_energy",
+      "g": "B",
+      "rel": "proveedor reproducido · corredor marítimo",
+      "why": "MCCI, Panjiva e ImportKey permiten reproducir a MG Energy como proveedor marítimo de Portacelis; ImportKey muestra ocho embarques en su universo observable.",
+      "src": ["S68", "S70", "S71"]
+    },
+    {
+      "id": "w8e08",
+      "a": "portacelis_supplier_universe",
+      "b": "benbros",
+      "g": "B",
+      "rel": "proveedor reproducido · muestra ferroviaria",
+      "why": "Panjiva muestra una operación Benbros→Portacelis con el permiso C1 de la empresa. Es el cuarto proveedor nominalmente reproducido en fuentes indexadas de esta ola.",
+      "src": ["S68"]
+    },
+    {
+      "id": "w8e09",
+      "a": "femdo_353_lead",
+      "b": "portacelis",
+      "g": "C",
+      "rel": "incluida en listado reportado",
+      "why": "Código Magenta afirma que el oficio FEMDO de 353 objetivos de interés menciona a Portacelis. No se obtuvo el documento primario; la relación permanece reportada.",
+      "src": ["S72"]
+    },
+    {
+      "id": "w8e10",
+      "a": "femdo_353_lead",
+      "b": "ingemar",
+      "g": "C",
+      "rel": "incluida en listado reportado",
+      "why": "Código Magenta afirma que el mismo oficio menciona a Ingemar. La existencia y contenido del documento requieren adquisición/corroboración primaria.",
+      "src": ["S72"]
+    },
+    {
+      "id": "w8e11",
+      "a": "femdo_353_lead",
+      "b": "ikon",
+      "g": "C",
+      "rel": "incluida en listado reportado",
+      "why": "Código Magenta afirma que el mismo oficio menciona a Ikon Midstream. La inclusión se mantiene como alegación periodística hasta obtener el oficio.",
+      "src": ["S72"]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H13",
+      "title": "Enriquecimiento de agentes de Portacelis en investigaciones de combustible",
+      "level": "No evaluable con OSINT abierto / estacionada",
+      "support": "Olas 6–7 produjeron una señal preliminar: entre tres patentes observadas alrededor de Portacelis, 3677 tiene un titular vinculado a proceso en una causa ferroviaria y 3830 aparece en otra investigación reportada. La pregunta de enriquecimiento sigue siendo válida.",
+      "against": "Ola 8 demuestra que no existe un denominador público nominativo y reproducible suficiente para ejecutar el test. MCCI, Panjiva, N+ e ImportKey exponen universos con unidades, coberturas y periodos diferentes; ANAM protege información identificable de contribuyentes y reserva el detalle de operaciones propias a mecanismos autenticados. Calcular 2/3 o cualquier tasa sería estadísticamente engañoso.",
+      "missing": "Conjunto completo de pedimentos/patentes de Portacelis, universo comparable de agentes por aduana y periodo, volumen total por agente, etiqueta independiente de investigaciones y definición común de unidad de observación. H13 no debe elevarse hasta obtener esos datos."
+    },
+    {
+      "id": "H14",
+      "title": "Sesgo de visibilidad y agregación aduanal",
+      "level": "Fuertemente sustentada como hipótesis metodológica / red-team",
+      "support": "Fuentes legítimas cuentan fenómenos distintos: operaciones reconstruidas, registros comerciales disponibles, ferrotanques en una ventana temporal y embarques marítimos. Además, ANAM limita la publicación nominativa por confidencialidad. Esto puede producir falsas ausencias, dobles conteos o aparente enriquecimiento cuando se mezclan universos incompatibles.",
+      "against": "La heterogeneidad de fuentes no invalida observaciones individuales reproducibles —por ejemplo una patente en un pedimento o un proveedor en un embarque—. El problema surge al convertir muestras parciales en proporciones del universo total.",
+      "missing": "Diccionario común de unidad de observación, deduplicación por pedimento/fecha/aduana, acceso autorizado o primario al universo de operaciones y documentación de cobertura de cada proveedor de datos."
+    }
+  ],
+  "timeline": [
+    ["Ola 8 · ago 2026", "Se intenta reconstruir el conjunto completo de pedimentos/patentes de Portacelis. El test de enriquecimiento H13 se estaciona porque las fuentes abiertas no permiten obtener un denominador nominativo completo y comparable."],
+    ["Ola 8 · ago 2026", "Se identifica como lead un oficio FEMDO reportado por Código Magenta que supuestamente reúne 353 personas/entidades e incluiría Portacelis, Ingemar e Ikon. El documento primario no ha sido obtenido y permanece grado C."]
+  ]
+}
