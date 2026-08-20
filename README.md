@@ -16,18 +16,19 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 ## Estado vigente
 
-**Ola 0 + Ola 1 + Ola 2 + Ola 3 + Ola 4 + Ola 5 + Ola 6** · corte de investigación: **19 de agosto de 2026**.
+**Ola 0 + Ola 1 + Ola 2 + Ola 3 + Ola 4 + Ola 5 + Ola 6 + Ola 7** · corte de investigación: **19 de agosto de 2026**.
 
-Tras integrar la Ola 6, el universo esperado contiene:
+Tras integrar la Ola 7, el universo esperado contiene:
 
-- **79 nodos**;
-- **115 relaciones**;
-- **56 fuentes registradas**;
-- **12 hipótesis de trabajo**;
-- **4 overlays**;
+- **84 nodos**;
+- **123 relaciones**;
+- **65 fuentes registradas**;
+- **13 hipótesis de trabajo**;
+- **5 overlays**;
 - escala epistemológica A–G;
 - cronología ampliada 2018–2026;
-- análisis reproducible de degree, betweenness, articulation points, bridges y shortest paths.
+- análisis reproducible de degree, betweenness, articulation points, bridges y shortest paths;
+- baseline/control group obligatorio para puentes profesionales recurrentes.
 
 La Ola 2 se documenta en [`research/wave-02-amilcar-olan/report.md`](research/wave-02-amilcar-olan/report.md). Identificó a **Juan Carlos de la Cruz Murillo** como nodo puente corporativo entre varias sociedades del universo de Amílcar Olán y la constitución inicial de Portacelis Gas & Oil.
 
@@ -37,7 +38,9 @@ La Ola 4 se documenta en [`research/wave-04-portacelis-money-trail/report.md`](r
 
 La Ola 5 se documenta en [`research/wave-05-operation-files/report.md`](research/wave-05-operation-files/report.md) y su plan ejecutable en [`research/wave-05-operation-files/acquisition-plan.md`](research/wave-05-operation-files/acquisition-plan.md). Formaliza las llaves documentales RPC/SIGER, SENER, SAT Sector 13 y el expediente del cateo a Ikon.
 
-La Ola 6 se documenta en [`research/wave-06-reverse-graph/report.md`](research/wave-06-reverse-graph/report.md), con métricas en [`research/wave-06-reverse-graph/metrics.md`](research/wave-06-reverse-graph/metrics.md). Introduce investigación inversa reproducible y selecciona como puente a **Juan Hermilo Chávez Rodríguez / patente 3677**. El hallazgo material es que la patente aparece en operaciones separadas de Portacelis e Ingemar y que su titular fue vinculado a proceso en 2026 dentro de la causa ferroviaria asociada a Ingemar. Al mismo tiempo, el baseline muestra que 3677 atiende sectores no energéticos, por lo que compartir agente **no demuestra coordinación** ni convierte en irregular una operación de Portacelis.
+La Ola 6 se documenta en [`research/wave-06-reverse-graph/report.md`](research/wave-06-reverse-graph/report.md), con métricas en [`research/wave-06-reverse-graph/metrics.md`](research/wave-06-reverse-graph/metrics.md). Introduce investigación inversa reproducible y selecciona como puente a **Juan Hermilo Chávez Rodríguez / patente 3677**. La patente aparece en operaciones separadas de Portacelis e Ingemar y su titular fue vinculado a proceso en 2026 dentro de la causa ferroviaria asociada a Ingemar; la imputación no convierte otros despachos en ilícitos.
+
+La Ola 7 se documenta en [`research/wave-07-customs-baseline/report.md`](research/wave-07-customs-baseline/report.md). Construye un grupo de control con las patentes **3677, 3830 y 3807**. Las tres muestran actividad multisectorial, por lo que compartir agente se debilita como señal de coordinación. H09 —concentración comercial— se fortalece, H12 baja de intensidad y nace H13: una prueba futura de **enriquecimiento** que sólo podrá evaluarse cuando exista denominador real de clientes, pedimentos y cuota de mercado.
 
 ## Arquitectura del conocimiento
 
@@ -54,7 +57,8 @@ index.html
 │       ├── wave-03-portacelis-operators.json
 │       ├── wave-04-portacelis-money-trail.json
 │       ├── wave-05-operation-files.json
-│       └── wave-06-reverse-graph.json
+│       ├── wave-06-reverse-graph.json
+│       └── wave-07-customs-baseline.json
 ├── research/
 │   ├── wave-02-amilcar-olan/report.md
 │   ├── wave-03-portacelis-operators/report.md
@@ -62,9 +66,11 @@ index.html
 │   ├── wave-05-operation-files/
 │   │   ├── report.md
 │   │   └── acquisition-plan.md
-│   └── wave-06-reverse-graph/
-│       ├── report.md
-│       └── metrics.md
+│   ├── wave-06-reverse-graph/
+│   │   ├── report.md
+│   │   └── metrics.md
+│   └── wave-07-customs-baseline/
+│       └── report.md
 ├── scripts/
 │   ├── validate_graph.py
 │   └── analyze_graph.py
@@ -82,6 +88,14 @@ index.html
 Un nodo con alta centralidad puede ser importante únicamente por su función profesional. **Centralidad no equivale a sospecha.** Desde Ola 6, toda métrica relevante debe distinguir al menos núcleo **A–C** de universo **A–G** para mostrar cuánto cambia la topología al incorporar hipótesis.
 
 La falta de evidencia abierta tampoco es evidencia de conspiración. Cada hipótesis importante debe señalar qué documentos o mediciones podrían matarla.
+
+Desde Ola 7, todo puente recurrente de infraestructura profesional —agente aduanal, notario, abogado, banco, naviera o proveedor logístico— debe pasar por:
+
+```text
+coincidencia → baseline → tasa base → control por volumen → hipótesis de enriquecimiento
+```
+
+**Sin denominador no hay anomalía cuantitativa.**
 
 ## Flujo de investigación
 
