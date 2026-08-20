@@ -16,19 +16,20 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 ## Estado vigente
 
-**Ola 0–9** · corte de investigación: **19 de agosto de 2026**.
+**Ola 0–10** · corte de investigación: **19 de agosto de 2026**.
 
-Tras integrar la Ola 9, el universo esperado provisionalmente contiene:
+Tras integrar la Ola 10, el universo validado contiene:
 
-- **97 nodos**;
-- **148 relaciones**;
-- **80 fuentes registradas**;
-- **16 hipótesis de trabajo**;
-- **7 overlays**;
+- **107 nodos**;
+- **165 relaciones**;
+- **91 fuentes registradas**;
+- **19 hipótesis de trabajo**;
+- **8 overlays**;
 - escala epistemológica A–G;
 - análisis reproducible A–C vs A–G;
 - control de baseline, tasa base, visibilidad y denominador;
-- control explícito de **independencia de fuentes** para filtraciones/exclusivas.
+- control explícito de **independencia de fuentes**;
+- separación entre **existencia de un puente** y **significado causal/criminal del puente**.
 
 > Los conteos son verificados por Actions. Si difieren, prevalece `scripts/validate_graph.py`.
 
@@ -41,7 +42,8 @@ Tras integrar la Ola 9, el universo esperado provisionalmente contiene:
 - **Ola 6** — [`research/wave-06-reverse-graph/report.md`](research/wave-06-reverse-graph/report.md): investigación inversa, centralidad y patente 3677 como puente investigativo.
 - **Ola 7** — [`research/wave-07-customs-baseline/report.md`](research/wave-07-customs-baseline/report.md): grupo de control 3677/3830/3807; compartir agente no demuestra coordinación.
 - **Ola 8** — [`research/wave-08-customs-denominator/report.md`](research/wave-08-customs-denominator/report.md): Full Portacelis Pediment Set no reconstruible con OSINT abierto; H13 estacionada y H14 formaliza sesgo de visibilidad/agregación.
-- **Ola 9** — [`research/wave-09-femdo-353/report.md`](research/wave-09-femdo-353/report.md): autenticación del supuesto oficio FEMDO de 353 entidades. **Resultado: autenticación parcial del contexto, no del documento; el lead permanece C.** Se añade H16: republicación ≠ corroboración independiente.
+- **Ola 9** — [`research/wave-09-femdo-353/report.md`](research/wave-09-femdo-353/report.md): autenticación del supuesto oficio FEMDO de 353 entidades. Resultado: autenticación parcial del contexto, no del documento; el lead permanece C. Se añade H16: republicación ≠ corroboración independiente.
+- **Ola 10** — [`research/wave-10-identify-the-three/report.md`](research/wave-10-identify-the-three/report.md): intenta identificar las tres empresas no nombradas por FGR en los cateos FEMDO del 29 may 2026. **Resultado: el trío sigue sin identificar**, pero **Maquiladora de Lubricantes** emerge como puente independiente entre Los Petrofactureros, Puerto Dos Bocas/Frontera y la causa penal 325/2025. También corrige el estatus de “Los Petrofactureros”: el Gabinete de Seguridad sí utilizó oficialmente ese nombre el 22 abr 2026.
 
 ## Arquitectura del conocimiento
 
@@ -61,7 +63,8 @@ index.html
 │       ├── wave-06-reverse-graph.json
 │       ├── wave-07-customs-baseline.json
 │       ├── wave-08-customs-denominator.json
-│       └── wave-09-femdo-353.json
+│       ├── wave-09-femdo-353.json
+│       └── wave-10-identify-the-three.json
 ├── research/
 │   └── wave-XX-*/
 ├── scripts/
@@ -105,7 +108,16 @@ fuente originaria → republicaciones → corroboraciones independientes
 10 republicaciones de una exclusiva ≠ 10 fuentes independientes
 ```
 
-Una republicación sólo eleva confianza si aporta evidencia nueva: documento, expediente, entrevista propia, registro o confirmación institucional independiente.
+Desde Ola 10:
+
+```text
+puente factual ≠ mando común
+empresa presente en dos islas ≠ las islas son una sola red
+prestación profesional ≠ conocimiento de la conducta del cliente
+puerto Dos Bocas ≠ Refinería Dos Bocas
+```
+
+La existencia de una conexión debe probarse por separado de la interpretación causal de esa conexión.
 
 ## Flujo de investigación
 

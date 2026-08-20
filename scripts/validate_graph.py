@@ -97,7 +97,10 @@ unique_ids(edges, "edges")
 unique_ids(hypotheses, "hypotheses")
 
 grades = set("ABCDEFG")
-valid_types = {"person", "org", "company", "project", "event", "concept"}
+# Keep validator aligned with the master ontology: infrastructure/objects are
+# first-class nodes and must not be forced into "project" or "org" merely to
+# satisfy the schema.
+valid_types = {"person", "org", "company", "project", "event", "concept", "infrastructure"}
 
 for source_id, source in sources.items():
     if not isinstance(source, dict):
