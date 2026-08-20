@@ -18,13 +18,13 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 **Ola 0–12** · corte de investigación: **19 de agosto de 2026**.
 
-Tras integrar la Ola 12, el universo esperado provisionalmente contiene:
+Tras integrar la Ola 12, el universo validado contiene:
 
-- **129 nodos**;
+- **130 nodos**;
 - **213 relaciones**;
 - **113 fuentes registradas**;
 - **23 hipótesis de trabajo**;
-- **10 overlays**;
+- **11 overlays**;
 - escala epistemológica A–G;
 - análisis reproducible A–C vs A–G;
 - control de baseline, tasa base, visibilidad y denominador;
@@ -47,7 +47,7 @@ Tras integrar la Ola 12, el universo esperado provisionalmente contiene:
 - **Ola 9** — [`research/wave-09-femdo-353/report.md`](research/wave-09-femdo-353/report.md): autenticación del supuesto oficio FEMDO de 353 entidades. Resultado: autenticación parcial del contexto, no del documento; el lead permanece C. Se añade H16: republicación ≠ corroboración independiente.
 - **Ola 10** — [`research/wave-10-identify-the-three/report.md`](research/wave-10-identify-the-three/report.md): intenta identificar las tres empresas no nombradas por FGR en los cateos FEMDO del 29 may 2026. El trío sigue sin identificar, pero Maquiladora de Lubricantes emerge como puente independiente entre Los Petrofactureros, Puerto Dos Bocas/Frontera y la causa penal 325/2025.
 - **Ola 11** — [`research/wave-11-maquiladora-supply-chain/report.md`](research/wave-11-maquiladora-supply-chain/report.md): el proveedor concreto citado por la causa 325 no se identifica; se reconstruye un corredor independiente Galem↔Gutasa/Ecocarburante y Ecocarburante↔AIFA/Sedena↔Mefra/IPS. Nace H21: contaminación retrospectiva de contratos públicos.
-- **Ola 12** — [`research/wave-12-extract-20-tomes/report.md`](research/wave-12-extract-20-tomes/report.md): identifica a **Karina Melissa Guerrero Rodríguez como proveedor histórico reportado de Maquiladora en 2020**, pero conserva abierta la identidad del proveedor específico al que alude la causa 325. Incorpora la carpeta `FED/TAM/REY/334/2021`, la rama Nexoil/Karina/Marvic y **Grupo Potesta** como nodo comercial-financiero reportado de la 325 con operaciones hacia Vector. Se añaden H22 (recurrencia histórica) y H23 (proveedor histórico ≠ proveedor imputado sin documento puente).
+- **Ola 12** — [`research/wave-12-extract-20-tomes/report.md`](research/wave-12-extract-20-tomes/report.md): identifica a **Karina Melissa Guerrero Rodríguez como proveedor histórico reportado de Maquiladora en 2020**, pero conserva abierta la identidad del proveedor específico al que alude la causa 325. Incorpora la carpeta `FED/TAM/REY/334/2021`, la rama Nexoil/Karina/Marvic y **Grupo Potesta** como nodo comercial-financiero reportado de la 325 con operaciones hacia **Vector Casa de Bolsa**. Se añaden H22 (recurrencia histórica) y H23 (proveedor histórico ≠ proveedor imputado sin documento puente).
 
 ## Arquitectura del conocimiento
 
@@ -70,7 +70,8 @@ index.html
 │       ├── wave-09-femdo-353.json
 │       ├── wave-10-identify-the-three.json
 │       ├── wave-11-maquiladora-supply-chain.json
-│       └── wave-12-extract-20-tomes.json
+│       ├── wave-12-extract-20-tomes.json
+│       └── wave-12-vector-context.json
 ├── research/
 │   └── wave-XX-*/
 ├── scripts/
@@ -81,7 +82,7 @@ index.html
     └── methodology.md
 ```
 
-Los overlays son paquetes versionados. `data/manifest.json` define cuáles carga el tablero. Si un overlay contiene un `id` existente, actualiza ese objeto en tiempo de carga; IDs nuevos amplían el universo.
+Los overlays son paquetes versionados. `data/manifest.json` define cuáles carga el tablero. Si un overlay contiene un `id` existente, actualiza ese objeto en tiempo de carga; IDs nuevos amplían el universo. `wave-12-vector-context.json` es un overlay técnico de contexto para materializar Vector como entidad referenciable; no representa una ola investigativa distinta.
 
 ## Principios centrales
 
@@ -138,6 +139,7 @@ Desde Ola 12:
 recurrencia entre expedientes → mayor prioridad investigativa, no continuidad procesal automática
 proveedor histórico ≠ proveedor citado por una causa posterior sin reconciliar fecha/CFDI/pedimento
 lista de 555 ≠ lista de 353 hasta obtener ambos universos y cruzarlos nominalmente
+relación con intermediario financiero ≠ lavado probado en cada operación
 ```
 
 La existencia de una conexión debe probarse por separado de la interpretación causal de esa conexión. En expedientes grandes, **primero se clasifica el rol de cada entidad y después se calcula o interpreta la red**.
