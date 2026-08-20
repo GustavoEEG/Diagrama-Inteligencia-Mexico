@@ -16,15 +16,15 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 ## Estado vigente
 
-**Ola 0 + Ola 1 + Ola 2 + Ola 3 + Ola 4** · corte de investigación: **19 de agosto de 2026**.
+**Ola 0 + Ola 1 + Ola 2 + Ola 3 + Ola 4 + Ola 5** · corte de investigación: **19 de agosto de 2026**.
 
-Tras integrar la Ola 4, el universo esperado contiene:
+Tras integrar la Ola 5, el universo esperado contiene:
 
-- **70 nodos**;
-- **99 relaciones**;
-- **43 fuentes registradas**;
-- **10 hipótesis de trabajo**;
-- **2 overlays**;
+- **75 nodos**;
+- **108 relaciones**;
+- **48 fuentes registradas**;
+- **11 hipótesis de trabajo**;
+- **3 overlays**;
 - escala epistemológica A–G;
 - cronología ampliada 2018–2026.
 
@@ -32,7 +32,9 @@ La Ola 2 se documenta en [`research/wave-02-amilcar-olan/report.md`](research/wa
 
 La Ola 3 se documenta en [`research/wave-03-portacelis-operators/report.md`](research/wave-03-portacelis-operators/report.md). Identificó **continuidad operativa investigable** alrededor de la reconfiguración societaria de Portacelis y bajó la capa aduanal a operadores/patentes concretos, sin convertir la prestación profesional en sospecha.
 
-La Ola 4 se documenta en [`research/wave-04-portacelis-money-trail/report.md`](research/wave-04-portacelis-money-trail/report.md). Su hallazgo principal es doble: (1) el money trail abierto permite cuantificar valor declarado y un tramo downstream Portacelis→Pacific Tamerlane→facturas Oxy; (2) la información capaz de resolver quién conservó el **control económico real** parece concentrarse en expedientes SENER/SAT/notariales/fiscales que no hemos obtenido íntegros. Por eso se incorpora H10: **techo de fuente abierta ≠ control oculto**.
+La Ola 4 se documenta en [`research/wave-04-portacelis-money-trail/report.md`](research/wave-04-portacelis-money-trail/report.md). Cuantificó parte del comercio declarado y un tramo downstream Portacelis→Pacific Tamerlane→facturas Oxy, pero encontró un techo natural del OSINT para beneficiario controlador, poderes, pagos y cuentas. De ahí H10: **opacidad documental ≠ control oculto**.
+
+La Ola 5 se documenta en [`research/wave-05-operation-files/report.md`](research/wave-05-operation-files/report.md) y su plan ejecutable en [`research/wave-05-operation-files/acquisition-plan.md`](research/wave-05-operation-files/acquisition-plan.md). Cambia el foco de “más nombres” a **adquisición de evidencia**: identifica el FME `N-2024071962` para consulta/certificación SIGER, corrobora el uso operativo del permiso SENER `1701C124002733` en rutas ferroviarias y marítimas, formaliza el expediente SAT Sector 13 como target y separa lo confirmado del cateo federal a Ikon de la afirmación todavía no corroborada por inventario de que se incautaron documentos de Portacelis.
 
 ## Arquitectura del conocimiento
 
@@ -47,11 +49,15 @@ index.html
 │   ├── timeline.json
 │   └── waves/
 │       ├── wave-03-portacelis-operators.json
-│       └── wave-04-portacelis-money-trail.json
+│       ├── wave-04-portacelis-money-trail.json
+│       └── wave-05-operation-files.json
 ├── research/
 │   ├── wave-02-amilcar-olan/report.md
 │   ├── wave-03-portacelis-operators/report.md
-│   └── wave-04-portacelis-money-trail/report.md
+│   ├── wave-04-portacelis-money-trail/report.md
+│   └── wave-05-operation-files/
+│       ├── report.md
+│       └── acquisition-plan.md
 ├── scripts/
 │   └── validate_graph.py
 └── docs/
@@ -69,21 +75,21 @@ Las relaciones A–B forman el núcleo factual/documentado. C corresponde a info
 
 Un nodo con alta centralidad puede ser importante únicamente por su función profesional —contador, comisario, abogado, agente aduanal, transportista—. **Centralidad no equivale a sospecha.**
 
-La Ola 4 añade una regla complementaria: **la falta de evidencia en fuentes abiertas no es evidencia de conspiración**. Cuando la normativa indica que el dato decisivo reside en expedientes no públicos, ese expediente se convierte en target documental.
+La Ola 4 añadió la regla: **la falta de evidencia en fuentes abiertas no es evidencia de conspiración**. La Ola 5 añade otra: **cada hipótesis importante debe señalar qué documentos podrían matarla** y registrar sus llaves de adquisición.
 
 El [`Protocolo Maestro`](docs/PROTOCOLO_MAESTRO.md) gobierna el proyecto completo.
 
 ## Flujo de investigación
 
 ```text
-investigación → fuentes → nodos → aristas → contradicciones → hipótesis → red team → overlay → PR → validación → merge
+investigación → fuentes → nodos → aristas → contradicciones → hipótesis → red team → targets documentales → overlay → PR → validación → merge
 ```
 
 Ramas temáticas sugeridas:
 
-- `agent/wave-04-portacelis-money-trail`
-- `agent/wave-05-regulatory-files`
+- `agent/wave-05-operation-files`
 - `agent/wave-06-customs-baseline`
+- `agent/wave-07-us-enforcement`
 - `agent/red-team-h08`
 
 ## Validación automática
