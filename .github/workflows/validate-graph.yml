@@ -1,0 +1,29 @@
+name: Validate intelligence graph
+
+on:
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'scripts/validate_graph.py'
+      - '.github/workflows/validate-graph.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/**'
+      - 'scripts/validate_graph.py'
+      - '.github/workflows/validate-graph.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Validate graph data
+        run: python3 scripts/validate_graph.py

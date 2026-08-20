@@ -14,20 +14,20 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 **Toda conversación nueva que continúe este proyecto debe leer primero ese protocolo y después consultar el estado actual de `main`, los archivos de `data/` y los PR recientes.** Las conversaciones son sesiones temporales; el repositorio es la memoria persistente del proyecto.
 
-## Estado inicial
+## Estado vigente
 
-**Ola 0 + Ola 1** · corte semilla: **18 de agosto de 2026**.
+**Ola 0 + Ola 1 + Ola 2** · corte de investigación: **19 de agosto de 2026**.
 
-El tablero inicial contiene:
+Tras la primera integración de Ola 2, el tablero contiene:
 
-- 35 nodos;
-- 47 relaciones;
-- 24 fuentes registradas;
-- 5 hipótesis de trabajo;
+- 53 nodos;
+- 71 relaciones;
+- 32 fuentes registradas;
+- 7 hipótesis de trabajo;
 - escala epistemológica A–G;
-- cronología semilla 2018–2026.
+- cronología ampliada 2018–2026.
 
-> Estos conteos describen la semilla inicial y pueden quedar obsoletos. Para el estado vigente, consultar los JSON de `main`.
+La Ola 2 se documenta en [`research/wave-02-amilcar-olan/report.md`](research/wave-02-amilcar-olan/report.md). Su hallazgo principal es **Juan Carlos de la Cruz Murillo como nodo puente corporativo** entre varias sociedades del universo de Amílcar Olán y la constitución inicial de Portacelis Gas & Oil. El hallazgo no demuestra participación de Olán o de los López Beltrán en irregularidades de combustible.
 
 ## Estructura
 
@@ -39,6 +39,9 @@ index.html
 │   ├── sources.json
 │   ├── hypotheses.json
 │   └── timeline.json
+├── research/
+│   └── wave-02-amilcar-olan/
+│       └── report.md
 └── docs/
     ├── PROTOCOLO_MAESTRO.md
     └── methodology.md
@@ -75,7 +78,7 @@ GitHub Pages debe estar configurado con:
 
 El workflow `.github/workflows/deploy-pages.yml` se ejecuta en cada push a `main` y también puede lanzarse manualmente con `workflow_dispatch`.
 
-Mantener el despliegue en Actions nos permitirá añadir validaciones automáticas antes de publicar, por ejemplo:
+Mantener el despliegue en Actions permitirá añadir validaciones automáticas antes de publicar, por ejemplo:
 
 - JSON válido;
 - IDs de nodos únicos;
