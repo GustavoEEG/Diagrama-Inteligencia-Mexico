@@ -16,20 +16,23 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 ## Estado vigente
 
-**Ola 0 + Ola 1 + Ola 2 + Ola 3** · corte de investigación: **19 de agosto de 2026**.
+**Ola 0 + Ola 1 + Ola 2 + Ola 3 + Ola 4** · corte de investigación: **19 de agosto de 2026**.
 
-Tras integrar la Ola 3, el universo contiene:
+Tras integrar la Ola 4, el universo esperado contiene:
 
-- **63 nodos**;
-- **88 relaciones**;
-- **38 fuentes registradas**;
-- **9 hipótesis de trabajo**;
+- **70 nodos**;
+- **99 relaciones**;
+- **43 fuentes registradas**;
+- **10 hipótesis de trabajo**;
+- **2 overlays**;
 - escala epistemológica A–G;
 - cronología ampliada 2018–2026.
 
 La Ola 2 se documenta en [`research/wave-02-amilcar-olan/report.md`](research/wave-02-amilcar-olan/report.md). Su hallazgo principal fue **Juan Carlos de la Cruz Murillo como nodo puente corporativo** entre varias sociedades del universo de Amílcar Olán y la constitución inicial de Portacelis Gas & Oil.
 
-La Ola 3 se documenta en [`research/wave-03-portacelis-operators/report.md`](research/wave-03-portacelis-operators/report.md). Su hallazgo principal es una **continuidad operativa investigable alrededor de la reconfiguración societaria de Portacelis** —poder otorgado a Armando Carrillo Peregrino seis días antes de la venta y permanencia de Jesús Medina Córdova— además de una capa aduanal concreta con patentes 3830, 3807 y 3677. Ninguno de estos hallazgos demuestra por sí solo beneficiario final oculto, coordinación criminal ni participación de los López Beltrán.
+La Ola 3 se documenta en [`research/wave-03-portacelis-operators/report.md`](research/wave-03-portacelis-operators/report.md). Identificó **continuidad operativa investigable** alrededor de la reconfiguración societaria de Portacelis y bajó la capa aduanal a operadores/patentes concretos, sin convertir la prestación profesional en sospecha.
+
+La Ola 4 se documenta en [`research/wave-04-portacelis-money-trail/report.md`](research/wave-04-portacelis-money-trail/report.md). Su hallazgo principal es doble: (1) el money trail abierto permite cuantificar valor declarado y un tramo downstream Portacelis→Pacific Tamerlane→facturas Oxy; (2) la información capaz de resolver quién conservó el **control económico real** parece concentrarse en expedientes SENER/SAT/notariales/fiscales que no hemos obtenido íntegros. Por eso se incorpora H10: **techo de fuente abierta ≠ control oculto**.
 
 ## Arquitectura del conocimiento
 
@@ -43,12 +46,12 @@ index.html
 │   ├── hypotheses.json
 │   ├── timeline.json
 │   └── waves/
-│       └── wave-03-portacelis-operators.json
+│       ├── wave-03-portacelis-operators.json
+│       └── wave-04-portacelis-money-trail.json
 ├── research/
-│   ├── wave-02-amilcar-olan/
-│   │   └── report.md
-│   └── wave-03-portacelis-operators/
-│       └── report.md
+│   ├── wave-02-amilcar-olan/report.md
+│   ├── wave-03-portacelis-operators/report.md
+│   └── wave-04-portacelis-money-trail/report.md
 ├── scripts/
 │   └── validate_graph.py
 └── docs/
@@ -56,9 +59,7 @@ index.html
     └── methodology.md
 ```
 
-`index.html` es el motor visual. A partir de la Ola 3, las expansiones nuevas se almacenan preferentemente como **overlays versionados** en `data/waves/`. `data/manifest.json` indica qué paquetes debe cargar el tablero. Esto permite que cada ola añada o actualice nodos, aristas, fuentes, hipótesis y cronología sin reescribir todo el corpus histórico.
-
-Cuando un overlay contiene un objeto con un `id` ya existente, el overlay actualiza ese objeto en tiempo de carga; los objetos con IDs nuevos amplían el universo. El validador reproduce la misma lógica antes de permitir la integración.
+`index.html` es el motor visual. Las expansiones nuevas se almacenan preferentemente como **overlays versionados** en `data/waves/`. `data/manifest.json` indica qué paquetes debe cargar el tablero. Cuando un overlay contiene un objeto con un `id` ya existente, actualiza ese objeto en tiempo de carga; los IDs nuevos amplían el universo. El validador reproduce la misma lógica antes de permitir integración.
 
 ## Principio central
 
@@ -68,7 +69,9 @@ Las relaciones A–B forman el núcleo factual/documentado. C corresponde a info
 
 Un nodo con alta centralidad puede ser importante únicamente por su función profesional —contador, comisario, abogado, agente aduanal, transportista—. **Centralidad no equivale a sospecha.**
 
-El [`Protocolo Maestro`](docs/PROTOCOLO_MAESTRO.md) gobierna el proyecto completo. [`docs/methodology.md`](docs/methodology.md) conserva la versión metodológica inicial como referencia compacta.
+La Ola 4 añade una regla complementaria: **la falta de evidencia en fuentes abiertas no es evidencia de conspiración**. Cuando la normativa indica que el dato decisivo reside en expedientes no públicos, ese expediente se convierte en target documental.
+
+El [`Protocolo Maestro`](docs/PROTOCOLO_MAESTRO.md) gobierna el proyecto completo.
 
 ## Flujo de investigación
 
@@ -76,31 +79,17 @@ El [`Protocolo Maestro`](docs/PROTOCOLO_MAESTRO.md) gobierna el proyecto complet
 investigación → fuentes → nodos → aristas → contradicciones → hipótesis → red team → overlay → PR → validación → merge
 ```
 
-Cada ola debe preferir una rama temática, por ejemplo:
+Ramas temáticas sugeridas:
 
-- `agent/wave-03-portacelis-operators`
-- `agent/wave-04-beneficial-owners-money-trail`
-- `agent/wave-05-customs-baseline`
-- `agent/red-team-h06`
+- `agent/wave-04-portacelis-money-trail`
+- `agent/wave-05-regulatory-files`
+- `agent/wave-06-customs-baseline`
+- `agent/red-team-h08`
 
 ## Validación automática
 
-`.github/workflows/validate-graph.yml` ejecuta `scripts/validate_graph.py` sobre PRs que modifican datos/metodología relevante. El validador lee la base y todos los overlays declarados en `data/manifest.json` y comprueba, entre otras cosas:
-
-- JSON válido;
-- IDs únicos en el universo resultante;
-- nodos y tipos válidos;
-- aristas sin nodos huérfanos;
-- grados A–G válidos;
-- fuentes existentes para relaciones A–C;
-- referencias de fuentes sin romper;
-- campos obligatorios en hipótesis;
-- cronología estructuralmente válida.
+`.github/workflows/validate-graph.yml` ejecuta `scripts/validate_graph.py` sobre PRs que modifican datos relevantes. El validador lee la base y todos los overlays declarados en `data/manifest.json` y comprueba JSON válido, IDs, nodos huérfanos, grados A–G, fuentes y estructura de hipótesis/cronología.
 
 ## Publicación
 
-GitHub Pages debe estar configurado con:
-
-- **Source:** `GitHub Actions`
-
-El workflow `.github/workflows/deploy-pages.yml` se ejecuta en cada push a `main` y también puede lanzarse manualmente con `workflow_dispatch`.
+GitHub Pages está configurado con **Source: GitHub Actions**. `.github/workflows/deploy-pages.yml` se ejecuta en cada push a `main` y también puede lanzarse con `workflow_dispatch`.
