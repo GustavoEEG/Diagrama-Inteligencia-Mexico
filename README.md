@@ -16,15 +16,15 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 ## Estado vigente
 
-**Ola 0–15** · corte de investigación: **20 de agosto de 2026**.
+**Ola 0–16** · corte de investigación: **20 de agosto de 2026**.
 
-Tras integrar la Ola 15, el universo validado contiene:
+Tras integrar la Ola 16, el universo esperado contiene:
 
-- **155 nodos**;
-- **266 relaciones**;
-- **149 fuentes registradas**;
-- **29 hipótesis de trabajo**;
-- **14 overlays**;
+- **168 nodos**;
+- **282 relaciones**;
+- **156 fuentes registradas**;
+- **31 hipótesis de trabajo**;
+- **15 overlays**;
 - escala epistemológica A–G;
 - análisis reproducible A–C vs A–G;
 - control de baseline, tasa base, visibilidad y denominador;
@@ -36,7 +36,9 @@ Tras integrar la Ola 15, el universo validado contiene:
 - modelado de sanciones/suspensiones por su **causal jurídica exacta**;
 - separación de pistas de enforcement que comparten intermediario pero no transacción;
 - control de **provenance entre listas** para distinguir convergencia independiente de reciclaje de inteligencia;
-- separación entre **continuidad operacional longitudinal** y **continuidad de conducta ilícita**.
+- separación entre **continuidad operacional longitudinal** y **continuidad de conducta ilícita**;
+- separación entre **contrato presentado en expediente regulatorio** y **transacción/importación efectivamente ejecutada**;
+- control de **proveedor compartido** mediante denominador antes de inferir coordinación entre clientes.
 
 > Los conteos son verificados por Actions. Si difieren, prevalece `scripts/validate_graph.py`.
 
@@ -56,6 +58,7 @@ Tras integrar la Ola 15, el universo validado contiene:
 - **Ola 13** — [`research/wave-13-potesta-vector-555/report.md`](research/wave-13-potesta-vector-555/report.md): somete a falsación la rama Potesta→Vector y el universo CFIC 555/108. Confirma actividad regulatoria real de Potesta, corrige su suspensión SAT de 2021 a causal IV por inactividad >12 meses, separa la pista FinCEN/opioides de la pista mexicana Potesta/huachicol y formaliza H24 (convergencia CFIC-108) y H25 (separación de pistas Vector).
 - **Ola 14** — [`research/wave-14-cross-list-intelligence/report.md`](research/wave-14-cross-list-intelligence/report.md): cruza CFIC-108, FEMDO-353 publicado parcialmente, 334/2021 y el grafo. El anexo 353 incompleto impide un triple match nominal nuevo; el cruce 334∩108 selecciona **Energética Carvel** como primer target nuevo con antecedente adicional de 2018. Se añaden H26 (recurrencia como priorizador) y H27 (reciclaje histórico como explicación rival), con Diesel Max/Faja/Paje como controles.
 - **Ola 15** — [`research/wave-15-carvel-longitudinal/report.md`](research/wave-15-carvel-longitudinal/report.md): reconstruye la continuidad Carvel 2016–2026. Confirma permisos SENER pre-2018, continuidad de Carlos Alberto Velázquez Nieto, el brazo transportista Porteadora Carvel y corrige `H/22701/COM/2019` a **Vigente** según el listado actual de CRE. La continuidad operacional se separa de cualquier continuidad ilícita no demostrada; nacen H28 y H29 y Carvel Energy Inc. queda como target estadounidense prioritario.
+- **Ola 16** — [`research/wave-16-carvel-us-mx-supply-chain/report.md`](research/wave-16-carvel-us-mx-supply-chain/report.md): expedientes primarios SENER de 2019 revelan contratos/proveeduría declarada de Carvel con **Vitol Inc., Vitol Marketing México y L. Energy International**; L. Energy aparece también en una solicitud independiente de **Karina Guerrero**, cuyo expediente menciona facturas a Carvel y contrato con Maquiladora. Se fortalece la relación histórica Karina↔Carvel/Maquiladora sin equipararla a una operación ilícita y L. Energy emerge como puente de alto valor hacia la isla Ingemar. Nacen H30 (upstream multicanal) y H31 (L. Energy como puente comercial a medir con denominador).
 
 ## Arquitectura del conocimiento
 
@@ -82,7 +85,8 @@ index.html
 │       ├── wave-12-vector-context.json
 │       ├── wave-13-potesta-vector-555.json
 │       ├── wave-14-cross-list-intelligence.json
-│       └── wave-15-carvel-longitudinal.json
+│       ├── wave-15-carvel-longitudinal.json
+│       └── wave-16-carvel-us-mx-supply-chain.json
 ├── research/
 │   └── wave-XX-*/
 ├── scripts/
@@ -178,6 +182,16 @@ continuidad operacional ≠ continuidad ilícita
 mismo operador/empresa a través del tiempo ≠ mismo hecho delictivo a través del tiempo
 proyecto de caducidad ≠ caducidad final sin resolución/estatus vigente reconciliado
 integración vertical alegada → registro corporativo + pedimento + transporte + almacenamiento antes de inferir flujo
+```
+
+Desde Ola 16:
+
+```text
+contrato presentado a regulador ≠ operación ejecutada
+permiso aprobado posterior ≠ proveedor de una solicitud previa
+proveedor compartido ≠ coordinación entre clientes
+factura/contrato citado por autoridad → fortalece existencia de relación, no valida automáticamente monto, entrega o ilicitud
+proveedor compartido → reconstruir clientela/volumen → denominador → buscar coincidencia transaccional específica
 ```
 
 La existencia de una conexión debe probarse por separado de la interpretación causal de esa conexión. En expedientes grandes, **primero se clasifica el rol de cada entidad y después se calcula o interpreta la red**.
