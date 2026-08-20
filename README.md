@@ -16,36 +16,32 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 ## Estado vigente
 
-**Ola 0 + Ola 1 + Ola 2 + Ola 3 + Ola 4 + Ola 5 + Ola 6 + Ola 7 + Ola 8** · corte de investigación: **19 de agosto de 2026**.
+**Ola 0–9** · corte de investigación: **19 de agosto de 2026**.
 
-Tras integrar la Ola 8, el universo esperado contiene provisionalmente:
+Tras integrar la Ola 9, el universo esperado provisionalmente contiene:
 
-- **88 nodos**;
-- **134 relaciones**;
-- **73 fuentes registradas**;
-- **14 hipótesis de trabajo**;
-- **6 overlays**;
+- **97 nodos**;
+- **148 relaciones**;
+- **80 fuentes registradas**;
+- **16 hipótesis de trabajo**;
+- **7 overlays**;
 - escala epistemológica A–G;
-- cronología ampliada 2018–2026;
-- análisis reproducible de degree, betweenness, articulation points, bridges y shortest paths;
-- baseline/control group obligatorio para puentes profesionales recurrentes;
-- control explícito de **visibilidad, unidad de observación y denominador** antes de cualquier inferencia cuantitativa.
+- análisis reproducible A–C vs A–G;
+- control de baseline, tasa base, visibilidad y denominador;
+- control explícito de **independencia de fuentes** para filtraciones/exclusivas.
 
-> Los conteos anteriores se verifican por Actions; si difieren, prevalece el resultado de `scripts/validate_graph.py`.
+> Los conteos son verificados por Actions. Si difieren, prevalece `scripts/validate_graph.py`.
 
-La Ola 2 se documenta en [`research/wave-02-amilcar-olan/report.md`](research/wave-02-amilcar-olan/report.md). Identificó a **Juan Carlos de la Cruz Murillo** como nodo puente corporativo entre varias sociedades del universo de Amílcar Olán y la constitución inicial de Portacelis Gas & Oil.
+### Olas documentadas
 
-La Ola 3 se documenta en [`research/wave-03-portacelis-operators/report.md`](research/wave-03-portacelis-operators/report.md). Identificó continuidad operativa investigable alrededor de la reconfiguración societaria de Portacelis y bajó la capa aduanal a operadores/patentes concretos, sin convertir la prestación profesional en sospecha.
-
-La Ola 4 se documenta en [`research/wave-04-portacelis-money-trail/report.md`](research/wave-04-portacelis-money-trail/report.md). Cuantificó parte del comercio declarado y un tramo downstream Portacelis→Pacific Tamerlane→facturas Oxy, pero encontró un techo natural del OSINT para beneficiario controlador, poderes, pagos y cuentas. De ahí H10: **opacidad documental ≠ control oculto**.
-
-La Ola 5 se documenta en [`research/wave-05-operation-files/report.md`](research/wave-05-operation-files/report.md) y su plan ejecutable en [`research/wave-05-operation-files/acquisition-plan.md`](research/wave-05-operation-files/acquisition-plan.md). Formaliza las llaves documentales RPC/SIGER, SENER, SAT Sector 13 y el expediente del cateo a Ikon.
-
-La Ola 6 se documenta en [`research/wave-06-reverse-graph/report.md`](research/wave-06-reverse-graph/report.md), con métricas en [`research/wave-06-reverse-graph/metrics.md`](research/wave-06-reverse-graph/metrics.md). Introduce investigación inversa reproducible y selecciona como puente a **Juan Hermilo Chávez Rodríguez / patente 3677**. La patente aparece en operaciones separadas de Portacelis e Ingemar y su titular fue vinculado a proceso en 2026 dentro de la causa ferroviaria asociada a Ingemar; la imputación no convierte otros despachos en ilícitos.
-
-La Ola 7 se documenta en [`research/wave-07-customs-baseline/report.md`](research/wave-07-customs-baseline/report.md). Construye un grupo de control con las patentes **3677, 3830 y 3807**. Las tres muestran actividad multisectorial, por lo que compartir agente se debilita como señal de coordinación. H09 —concentración comercial— se fortalece, H12 baja de intensidad y nace H13: una prueba futura de enriquecimiento condicionada a conseguir denominadores reales.
-
-La Ola 8 se documenta en [`research/wave-08-customs-denominator/report.md`](research/wave-08-customs-denominator/report.md). Intentó reconstruir el **Full Portacelis Pediment Set** para ejecutar H13 y activó el criterio de salida: las fuentes abiertas no ofrecen un universo nominativo completo y comparable por contribuyente. Muestras de MCCI, Panjiva, N+ e ImportKey usan unidades/coberturas distintas y ANAM limita el detalle identificable por confidencialidad. H13 queda **no evaluable/estacionada** y nace H14 —**sesgo de visibilidad y agregación aduanal**. La ola también registra como lead C, todavía no autenticado con documento primario, un supuesto oficio FEMDO de 353 personas/entidades reportado por Código Magenta.
+- **Ola 2** — [`research/wave-02-amilcar-olan/report.md`](research/wave-02-amilcar-olan/report.md): Juan Carlos de la Cruz Murillo como puente corporativo entre varias sociedades del universo de Amílcar Olán y la constitución inicial de Portacelis.
+- **Ola 3** — [`research/wave-03-portacelis-operators/report.md`](research/wave-03-portacelis-operators/report.md): continuidad operativa investigable y capa aduanal a operadores/patentes concretos.
+- **Ola 4** — [`research/wave-04-portacelis-money-trail/report.md`](research/wave-04-portacelis-money-trail/report.md): money trail parcial y techo OSINT para beneficiario/control/pagos.
+- **Ola 5** — [`research/wave-05-operation-files/report.md`](research/wave-05-operation-files/report.md): targets documentales RPC/SIGER, SENER, SAT Sector 13 y expediente del cateo a Ikon.
+- **Ola 6** — [`research/wave-06-reverse-graph/report.md`](research/wave-06-reverse-graph/report.md): investigación inversa, centralidad y patente 3677 como puente investigativo.
+- **Ola 7** — [`research/wave-07-customs-baseline/report.md`](research/wave-07-customs-baseline/report.md): grupo de control 3677/3830/3807; compartir agente no demuestra coordinación.
+- **Ola 8** — [`research/wave-08-customs-denominator/report.md`](research/wave-08-customs-denominator/report.md): Full Portacelis Pediment Set no reconstruible con OSINT abierto; H13 estacionada y H14 formaliza sesgo de visibilidad/agregación.
+- **Ola 9** — [`research/wave-09-femdo-353/report.md`](research/wave-09-femdo-353/report.md): autenticación del supuesto oficio FEMDO de 353 entidades. **Resultado: autenticación parcial del contexto, no del documento; el lead permanece C.** Se añade H16: republicación ≠ corroboración independiente.
 
 ## Arquitectura del conocimiento
 
@@ -53,7 +49,7 @@ La Ola 8 se documenta en [`research/wave-08-customs-denominator/report.md`](rese
 index.html
 ├── data/
 │   ├── manifest.json
-│   ├── nodes.json                # base histórica consolidada hasta Ola 2
+│   ├── nodes.json
 │   ├── edges.json
 │   ├── sources.json
 │   ├── hypotheses.json
@@ -64,21 +60,10 @@ index.html
 │       ├── wave-05-operation-files.json
 │       ├── wave-06-reverse-graph.json
 │       ├── wave-07-customs-baseline.json
-│       └── wave-08-customs-denominator.json
+│       ├── wave-08-customs-denominator.json
+│       └── wave-09-femdo-353.json
 ├── research/
-│   ├── wave-02-amilcar-olan/report.md
-│   ├── wave-03-portacelis-operators/report.md
-│   ├── wave-04-portacelis-money-trail/report.md
-│   ├── wave-05-operation-files/
-│   │   ├── report.md
-│   │   └── acquisition-plan.md
-│   ├── wave-06-reverse-graph/
-│   │   ├── report.md
-│   │   └── metrics.md
-│   ├── wave-07-customs-baseline/
-│   │   └── report.md
-│   └── wave-08-customs-denominator/
-│       └── report.md
+│   └── wave-XX-*/
 ├── scripts/
 │   ├── validate_graph.py
 │   └── analyze_graph.py
@@ -87,17 +72,17 @@ index.html
     └── methodology.md
 ```
 
-`index.html` es el motor visual. Las expansiones nuevas se almacenan preferentemente como **overlays versionados** en `data/waves/`. `data/manifest.json` indica qué paquetes debe cargar el tablero. Cuando un overlay contiene un objeto con un `id` ya existente, actualiza ese objeto en tiempo de carga; los IDs nuevos amplían el universo. El validador reproduce la misma lógica antes de permitir integración.
+Los overlays son paquetes versionados. `data/manifest.json` define cuáles carga el tablero. Si un overlay contiene un `id` existente, actualiza ese objeto en tiempo de carga; IDs nuevos amplían el universo.
 
 ## Principios centrales
 
-**Una ruta entre nodos no demuestra culpabilidad, conocimiento, intención ni coordinación entre sus extremos.** Las relaciones A–B forman el núcleo factual/documentado; C corresponde a información reportada o alegada; D–G contienen inferencias, hipótesis y wildcards.
+**Una ruta entre nodos no demuestra culpabilidad, conocimiento, intención ni coordinación entre sus extremos.** A–B forman el núcleo factual/documentado; C es reportado/alegado; D–G son inferencias, hipótesis y wildcards.
 
-Un nodo con alta centralidad puede ser importante únicamente por su función profesional. **Centralidad no equivale a sospecha.** Desde Ola 6, toda métrica relevante debe distinguir al menos núcleo **A–C** de universo **A–G** para mostrar cuánto cambia la topología al incorporar hipótesis.
+**Centralidad no equivale a sospecha.** Toda métrica debe distinguir núcleo A–C de universo A–G.
 
-La falta de evidencia abierta tampoco es evidencia de conspiración. Cada hipótesis importante debe señalar qué documentos o mediciones podrían matarla.
+**Falta de evidencia abierta ≠ evidencia de conspiración.** Cada hipótesis importante debe señalar qué documentos o mediciones podrían matarla.
 
-Desde Ola 7, todo puente recurrente de infraestructura profesional —agente aduanal, notario, abogado, banco, naviera o proveedor logístico— debe pasar por:
+Para puentes profesionales recurrentes:
 
 ```text
 coincidencia → baseline → tasa base → control por volumen → hipótesis de enriquecimiento
@@ -105,7 +90,7 @@ coincidencia → baseline → tasa base → control por volumen → hipótesis d
 
 **Sin denominador no hay anomalía cuantitativa.**
 
-Desde Ola 8 se añade:
+Desde Ola 8:
 
 ```text
 muestra observable ≠ universo
@@ -113,19 +98,23 @@ shipment ≠ pedimento ≠ ferrotanque ≠ operación reconstruida
 ausencia en una base ≠ ausencia en la realidad
 ```
 
-Toda métrica cuantitativa debe declarar unidad de observación, cobertura, deduplicación y límites de visibilidad antes de calcular tasas.
+Desde Ola 9:
+
+```text
+fuente originaria → republicaciones → corroboraciones independientes
+10 republicaciones de una exclusiva ≠ 10 fuentes independientes
+```
+
+Una republicación sólo eleva confianza si aporta evidencia nueva: documento, expediente, entrevista propia, registro o confirmación institucional independiente.
 
 ## Flujo de investigación
 
 ```text
-investigación → fuentes → grafo A–C/A–G → puentes → red team/baseline → denominador/visibilidad → nodos/aristas → hipótesis → targets documentales → overlay → PR → validación → merge
+investigación → fuentes → independencia de fuentes → grafo A–C/A–G → puentes → red team/baseline → denominador/visibilidad → hipótesis → targets documentales → overlay → PR → validación → merge
 ```
 
 ## Validación y análisis automáticos
 
-- `.github/workflows/validate-graph.yml` ejecuta `scripts/validate_graph.py` y comprueba JSON, IDs, nodos huérfanos, grados A–G, fuentes y estructura de hipótesis/cronología.
-- `.github/workflows/analyze-graph.yml` ejecuta `scripts/analyze_graph.py` y calcula degree, betweenness, articulation points, bridges y rutas sobre A–C y A–G.
-
-## Publicación
-
-GitHub Pages está configurado con **Source: GitHub Actions**. `.github/workflows/deploy-pages.yml` se ejecuta en cada push a `main` y también puede lanzarse con `workflow_dispatch`.
+- `.github/workflows/validate-graph.yml` ejecuta `scripts/validate_graph.py`.
+- `.github/workflows/analyze-graph.yml` ejecuta `scripts/analyze_graph.py` sobre A–C y A–G.
+- `.github/workflows/deploy-pages.yml` publica GitHub Pages en cada push a `main`.
