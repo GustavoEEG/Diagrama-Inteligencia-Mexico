@@ -18,10 +18,10 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 **Ola 0–10** · corte de investigación: **19 de agosto de 2026**.
 
-Tras integrar la Ola 10, el universo esperado provisionalmente contiene:
+Tras integrar la Ola 10, el universo validado contiene:
 
 - **107 nodos**;
-- **164 relaciones**;
+- **165 relaciones**;
 - **91 fuentes registradas**;
 - **19 hipótesis de trabajo**;
 - **8 overlays**;
