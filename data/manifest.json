@@ -10,6 +10,7 @@
     "data/waves/wave-03-portacelis-operators.json",
     "data/waves/wave-04-portacelis-money-trail.json",
     "data/waves/wave-05-operation-files.json",
-    "data/waves/wave-06-reverse-graph.json"
+    "data/waves/wave-06-reverse-graph.json",
+    "data/waves/wave-07-customs-baseline.json"
   ]
 }
