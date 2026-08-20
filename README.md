@@ -16,20 +16,21 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 ## Estado vigente
 
-**Ola 0–10** · corte de investigación: **19 de agosto de 2026**.
+**Ola 0–11** · corte de investigación: **19 de agosto de 2026**.
 
-Tras integrar la Ola 10, el universo validado contiene:
+Tras integrar la Ola 11, el universo esperado provisionalmente contiene:
 
-- **107 nodos**;
-- **165 relaciones**;
-- **91 fuentes registradas**;
-- **19 hipótesis de trabajo**;
-- **8 overlays**;
+- **120 nodos**;
+- **193 relaciones**;
+- **102 fuentes registradas**;
+- **21 hipótesis de trabajo**;
+- **9 overlays**;
 - escala epistemológica A–G;
 - análisis reproducible A–C vs A–G;
 - control de baseline, tasa base, visibilidad y denominador;
 - control explícito de **independencia de fuentes**;
-- separación entre **existencia de un puente** y **significado causal/criminal del puente**.
+- separación entre **existencia de un puente** y **significado causal/criminal del puente**;
+- separación de **rol procesal/comercial** antes de inferir redes desde una causa penal.
 
 > Los conteos son verificados por Actions. Si difieren, prevalece `scripts/validate_graph.py`.
 
@@ -43,7 +44,8 @@ Tras integrar la Ola 10, el universo validado contiene:
 - **Ola 7** — [`research/wave-07-customs-baseline/report.md`](research/wave-07-customs-baseline/report.md): grupo de control 3677/3830/3807; compartir agente no demuestra coordinación.
 - **Ola 8** — [`research/wave-08-customs-denominator/report.md`](research/wave-08-customs-denominator/report.md): Full Portacelis Pediment Set no reconstruible con OSINT abierto; H13 estacionada y H14 formaliza sesgo de visibilidad/agregación.
 - **Ola 9** — [`research/wave-09-femdo-353/report.md`](research/wave-09-femdo-353/report.md): autenticación del supuesto oficio FEMDO de 353 entidades. Resultado: autenticación parcial del contexto, no del documento; el lead permanece C. Se añade H16: republicación ≠ corroboración independiente.
-- **Ola 10** — [`research/wave-10-identify-the-three/report.md`](research/wave-10-identify-the-three/report.md): intenta identificar las tres empresas no nombradas por FGR en los cateos FEMDO del 29 may 2026. **Resultado: el trío sigue sin identificar**, pero **Maquiladora de Lubricantes** emerge como puente independiente entre Los Petrofactureros, Puerto Dos Bocas/Frontera y la causa penal 325/2025. También corrige el estatus de “Los Petrofactureros”: el Gabinete de Seguridad sí utilizó oficialmente ese nombre el 22 abr 2026.
+- **Ola 10** — [`research/wave-10-identify-the-three/report.md`](research/wave-10-identify-the-three/report.md): intenta identificar las tres empresas no nombradas por FGR en los cateos FEMDO del 29 may 2026. El trío sigue sin identificar, pero Maquiladora de Lubricantes emerge como puente independiente entre Los Petrofactureros, Puerto Dos Bocas/Frontera y la causa penal 325/2025.
+- **Ola 11** — [`research/wave-11-maquiladora-supply-chain/report.md`](research/wave-11-maquiladora-supply-chain/report.md): intenta extraer el proveedor concreto de Maquiladora dentro de la causa 325/2025. **El proveedor sigue sin identificar y no se inventa una arista Maquiladora→Galem.** En cambio se reconstruye un corredor independiente Galem↔Gutasa/Ecocarburante, y Ecocarburante conecta documentalmente con AIFA/Sedena, Mefra Fletes, IPS y un evento de inspección en Matamoros de 2020. Nace H21: contaminación retrospectiva de contratos públicos.
 
 ## Arquitectura del conocimiento
 
@@ -64,7 +66,8 @@ index.html
 │       ├── wave-07-customs-baseline.json
 │       ├── wave-08-customs-denominator.json
 │       ├── wave-09-femdo-353.json
-│       └── wave-10-identify-the-three.json
+│       ├── wave-10-identify-the-three.json
+│       └── wave-11-maquiladora-supply-chain.json
 ├── research/
 │   └── wave-XX-*/
 ├── scripts/
@@ -117,12 +120,21 @@ prestación profesional ≠ conocimiento de la conducta del cliente
 puerto Dos Bocas ≠ Refinería Dos Bocas
 ```
 
-La existencia de una conexión debe probarse por separado de la interpretación causal de esa conexión.
+Desde Ola 11:
+
+```text
+misma causa penal ≠ mismo rol
+empresa investigada ≠ proveedor ≠ cliente ≠ transportista ≠ contraparte ≠ simple mención
+investigación posterior ≠ ilicitud retrospectiva de todos los contratos históricos
+contrato público → suministro concreto → documento/lote → irregularidad → conocimiento
+```
+
+La existencia de una conexión debe probarse por separado de la interpretación causal de esa conexión. En expedientes grandes, **primero se clasifica el rol de cada entidad y después se calcula o interpreta la red**.
 
 ## Flujo de investigación
 
 ```text
-investigación → fuentes → independencia de fuentes → grafo A–C/A–G → puentes → red team/baseline → denominador/visibilidad → hipótesis → targets documentales → overlay → PR → validación → merge
+investigación → fuentes → independencia de fuentes → clasificación de rol → grafo A–C/A–G → puentes → red team/baseline → denominador/visibilidad → hipótesis → targets documentales → overlay → PR → validación → merge
 ```
 
 ## Validación y análisis automáticos
