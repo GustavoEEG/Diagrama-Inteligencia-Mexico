@@ -8,6 +8,7 @@
   },
   "overlays": [
     "data/waves/wave-03-portacelis-operators.json",
-    "data/waves/wave-04-portacelis-money-trail.json"
+    "data/waves/wave-04-portacelis-money-trail.json",
+    "data/waves/wave-05-operation-files.json"
   ]
 }
