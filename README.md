@@ -16,15 +16,15 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 ## Estado vigente
 
-**Ola 0–13** · corte de investigación: **19 de agosto de 2026**.
+**Ola 0–14** · corte de investigación: **20 de agosto de 2026**.
 
-Tras integrar la Ola 13, el universo validado contiene:
+Tras integrar provisionalmente la Ola 14, el universo esperado contiene:
 
-- **137 nodos**;
-- **235 relaciones**;
-- **126 fuentes registradas**;
-- **25 hipótesis de trabajo**;
-- **12 overlays**;
+- **146 nodos**;
+- **252 relaciones**;
+- **135 fuentes registradas**;
+- **27 hipótesis de trabajo**;
+- **13 overlays**;
 - escala epistemológica A–G;
 - análisis reproducible A–C vs A–G;
 - control de baseline, tasa base, visibilidad y denominador;
@@ -34,7 +34,8 @@ Tras integrar la Ola 13, el universo validado contiene:
 - control de **recurrencia entre expedientes** sin asumir continuidad procesal;
 - separación explícita entre **universo de inteligencia, acusación, imputación, proceso y condena**;
 - modelado de sanciones/suspensiones por su **causal jurídica exacta**;
-- separación de pistas de enforcement que comparten intermediario pero no transacción.
+- separación de pistas de enforcement que comparten intermediario pero no transacción;
+- control de **provenance entre listas** para distinguir convergencia independiente de reciclaje de inteligencia.
 
 > Los conteos son verificados por Actions. Si difieren, prevalece `scripts/validate_graph.py`.
 
@@ -52,6 +53,7 @@ Tras integrar la Ola 13, el universo validado contiene:
 - **Ola 11** — [`research/wave-11-maquiladora-supply-chain/report.md`](research/wave-11-maquiladora-supply-chain/report.md): el proveedor concreto citado por la causa 325 no se identifica; se reconstruye un corredor independiente Galem↔Gutasa/Ecocarburante y Ecocarburante↔AIFA/Sedena↔Mefra/IPS. Nace H21: contaminación retrospectiva de contratos públicos.
 - **Ola 12** — [`research/wave-12-extract-20-tomes/report.md`](research/wave-12-extract-20-tomes/report.md): identifica a **Karina Melissa Guerrero Rodríguez como proveedor histórico reportado de Maquiladora en 2020**, pero conserva abierta la identidad del proveedor específico al que alude la causa 325. Incorpora la carpeta `FED/TAM/REY/334/2021`, la rama Nexoil/Karina/Marvic y **Grupo Potesta** como nodo comercial-financiero reportado de la 325 con operaciones hacia **Vector Casa de Bolsa**. Se añaden H22 (recurrencia histórica) y H23 (proveedor histórico ≠ proveedor imputado sin documento puente).
 - **Ola 13** — [`research/wave-13-potesta-vector-555/report.md`](research/wave-13-potesta-vector-555/report.md): somete a falsación la rama Potesta→Vector y el universo CFIC 555/108. Confirma actividad regulatoria real de Potesta, corrige su suspensión SAT de 2021 a causal IV por inactividad >12 meses, separa la pista FinCEN/opioides de la pista mexicana Potesta/huachicol y formaliza H24 (convergencia CFIC-108) y H25 (separación de pistas Vector).
+- **Ola 14** — [`research/wave-14-cross-list-intelligence/report.md`](research/wave-14-cross-list-intelligence/report.md): cruza CFIC-108, FEMDO-353 publicado parcialmente, 334/2021 y el grafo. El anexo 353 incompleto impide un triple match nominal nuevo; el cruce 334∩108 selecciona **Energética Carvel** como primer target nuevo con antecedente adicional de 2018. Se añaden H26 (recurrencia como priorizador) y H27 (reciclaje histórico como explicación rival), con Diesel Max/Faja/Paje como controles.
 
 ## Arquitectura del conocimiento
 
@@ -76,7 +78,8 @@ index.html
 │       ├── wave-11-maquiladora-supply-chain.json
 │       ├── wave-12-extract-20-tomes.json
 │       ├── wave-12-vector-context.json
-│       └── wave-13-potesta-vector-555.json
+│       ├── wave-13-potesta-vector-555.json
+│       └── wave-14-cross-list-intelligence.json
 ├── research/
 │   └── wave-XX-*/
 ├── scripts/
@@ -156,12 +159,21 @@ pistas de enforcement que comparten intermediario ≠ mismo esquema sin puente t
 permiso/actividad regulada real ≠ exculpación de todas las operaciones
 ```
 
+Desde Ola 14:
+
+```text
+recurrencia nominal entre listas → prioridad, no corroboración automática
+intersección de listas sin provenance ≠ observaciones independientes
+anexo incompleto → no inferir ausencia nominal
+actividad regulada real + investigación recurrente pueden coexistir
+```
+
 La existencia de una conexión debe probarse por separado de la interpretación causal de esa conexión. En expedientes grandes, **primero se clasifica el rol de cada entidad y después se calcula o interpreta la red**.
 
 ## Flujo de investigación
 
 ```text
-investigación → fuentes → independencia de fuentes → clasificación de rol → grafo A–C/A–G → puentes → red team/baseline → denominador/visibilidad → hipótesis → targets documentales → overlay → PR → validación → merge
+investigación → fuentes → independencia de fuentes → classification de rol → grafo A–C/A–G → puentes → red team/baseline → denominador/visibilidad → provenance entre listas → hipótesis → targets documentales → overlay → PR → validación → merge
 ```
 
 ## Validación y análisis automáticos
