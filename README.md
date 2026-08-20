@@ -16,19 +16,22 @@ La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOL
 
 ## Estado vigente
 
-**Ola 0 + Ola 1 + Ola 2 + Ola 3 + Ola 4 + Ola 5 + Ola 6 + Ola 7** · corte de investigación: **19 de agosto de 2026**.
+**Ola 0 + Ola 1 + Ola 2 + Ola 3 + Ola 4 + Ola 5 + Ola 6 + Ola 7 + Ola 8** · corte de investigación: **19 de agosto de 2026**.
 
-Tras integrar la Ola 7, el universo esperado contiene:
+Tras integrar la Ola 8, el universo esperado contiene provisionalmente:
 
-- **84 nodos**;
-- **123 relaciones**;
-- **65 fuentes registradas**;
-- **13 hipótesis de trabajo**;
-- **5 overlays**;
+- **88 nodos**;
+- **134 relaciones**;
+- **73 fuentes registradas**;
+- **14 hipótesis de trabajo**;
+- **6 overlays**;
 - escala epistemológica A–G;
 - cronología ampliada 2018–2026;
 - análisis reproducible de degree, betweenness, articulation points, bridges y shortest paths;
-- baseline/control group obligatorio para puentes profesionales recurrentes.
+- baseline/control group obligatorio para puentes profesionales recurrentes;
+- control explícito de **visibilidad, unidad de observación y denominador** antes de cualquier inferencia cuantitativa.
+
+> Los conteos anteriores se verifican por Actions; si difieren, prevalece el resultado de `scripts/validate_graph.py`.
 
 La Ola 2 se documenta en [`research/wave-02-amilcar-olan/report.md`](research/wave-02-amilcar-olan/report.md). Identificó a **Juan Carlos de la Cruz Murillo** como nodo puente corporativo entre varias sociedades del universo de Amílcar Olán y la constitución inicial de Portacelis Gas & Oil.
 
@@ -40,7 +43,9 @@ La Ola 5 se documenta en [`research/wave-05-operation-files/report.md`](research
 
 La Ola 6 se documenta en [`research/wave-06-reverse-graph/report.md`](research/wave-06-reverse-graph/report.md), con métricas en [`research/wave-06-reverse-graph/metrics.md`](research/wave-06-reverse-graph/metrics.md). Introduce investigación inversa reproducible y selecciona como puente a **Juan Hermilo Chávez Rodríguez / patente 3677**. La patente aparece en operaciones separadas de Portacelis e Ingemar y su titular fue vinculado a proceso en 2026 dentro de la causa ferroviaria asociada a Ingemar; la imputación no convierte otros despachos en ilícitos.
 
-La Ola 7 se documenta en [`research/wave-07-customs-baseline/report.md`](research/wave-07-customs-baseline/report.md). Construye un grupo de control con las patentes **3677, 3830 y 3807**. Las tres muestran actividad multisectorial, por lo que compartir agente se debilita como señal de coordinación. H09 —concentración comercial— se fortalece, H12 baja de intensidad y nace H13: una prueba futura de **enriquecimiento** que sólo podrá evaluarse cuando exista denominador real de clientes, pedimentos y cuota de mercado.
+La Ola 7 se documenta en [`research/wave-07-customs-baseline/report.md`](research/wave-07-customs-baseline/report.md). Construye un grupo de control con las patentes **3677, 3830 y 3807**. Las tres muestran actividad multisectorial, por lo que compartir agente se debilita como señal de coordinación. H09 —concentración comercial— se fortalece, H12 baja de intensidad y nace H13: una prueba futura de enriquecimiento condicionada a conseguir denominadores reales.
+
+La Ola 8 se documenta en [`research/wave-08-customs-denominator/report.md`](research/wave-08-customs-denominator/report.md). Intentó reconstruir el **Full Portacelis Pediment Set** para ejecutar H13 y activó el criterio de salida: las fuentes abiertas no ofrecen un universo nominativo completo y comparable por contribuyente. Muestras de MCCI, Panjiva, N+ e ImportKey usan unidades/coberturas distintas y ANAM limita el detalle identificable por confidencialidad. H13 queda **no evaluable/estacionada** y nace H14 —**sesgo de visibilidad y agregación aduanal**. La ola también registra como lead C, todavía no autenticado con documento primario, un supuesto oficio FEMDO de 353 personas/entidades reportado por Código Magenta.
 
 ## Arquitectura del conocimiento
 
@@ -58,7 +63,8 @@ index.html
 │       ├── wave-04-portacelis-money-trail.json
 │       ├── wave-05-operation-files.json
 │       ├── wave-06-reverse-graph.json
-│       └── wave-07-customs-baseline.json
+│       ├── wave-07-customs-baseline.json
+│       └── wave-08-customs-denominator.json
 ├── research/
 │   ├── wave-02-amilcar-olan/report.md
 │   ├── wave-03-portacelis-operators/report.md
@@ -69,7 +75,9 @@ index.html
 │   ├── wave-06-reverse-graph/
 │   │   ├── report.md
 │   │   └── metrics.md
-│   └── wave-07-customs-baseline/
+│   ├── wave-07-customs-baseline/
+│   │   └── report.md
+│   └── wave-08-customs-denominator/
 │       └── report.md
 ├── scripts/
 │   ├── validate_graph.py
@@ -97,10 +105,20 @@ coincidencia → baseline → tasa base → control por volumen → hipótesis d
 
 **Sin denominador no hay anomalía cuantitativa.**
 
+Desde Ola 8 se añade:
+
+```text
+muestra observable ≠ universo
+shipment ≠ pedimento ≠ ferrotanque ≠ operación reconstruida
+ausencia en una base ≠ ausencia en la realidad
+```
+
+Toda métrica cuantitativa debe declarar unidad de observación, cobertura, deduplicación y límites de visibilidad antes de calcular tasas.
+
 ## Flujo de investigación
 
 ```text
-investigación → fuentes → grafo A–C/A–G → puentes → red team/baseline → nodos/aristas → hipótesis → targets documentales → overlay → PR → validación → merge
+investigación → fuentes → grafo A–C/A–G → puentes → red team/baseline → denominador/visibilidad → nodos/aristas → hipótesis → targets documentales → overlay → PR → validación → merge
 ```
 
 ## Validación y análisis automáticos
