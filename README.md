@@ -16,15 +16,15 @@ Toda conversación nueva debe leer primero ese protocolo y después consultar `m
 
 ## Estado vigente
 
-**Ola 0–20** · corte de investigación: **16 de septiembre de 2026**.
+**Ola 0–21** · corte de investigación: **17 de septiembre de 2026**.
 
-Tras cargar la Ola 20, el universo esperado contiene:
+Tras cargar la Ola 21, el universo esperado contiene:
 
-- **211 nodos**;
-- **351 relaciones**;
-- **199 fuentes registradas**;
-- **38 hipótesis de trabajo**;
-- **19 overlays**;
+- **217 nodos**;
+- **360 relaciones**;
+- **205 fuentes registradas**;
+- **39 hipótesis de trabajo**;
+- **20 overlays**;
 - escala epistemológica A–G;
 - análisis reproducible A–C vs A–G;
 - baseline, tasa base, visibilidad y denominador;
@@ -44,6 +44,8 @@ Tras cargar la Ola 20, el universo esperado contiene:
 - **mismo lessor reportado ≠ mismo carrotanque físico**;
 - **reporting mark actual ≠ necesariamente propietario/arrendador histórico de la unidad**;
 - **bancarrota ≠ irregularidad criminal** y docket que confirma un documento ≠ contenido del documento;
+- **100 notices ≠ 100 acreedores únicos**;
+- **No Asset ≠ cero activos declarados**;
 - **función estatal explotada por fraude ≠ función estatal capturada** sin evidencia de colaboración/protección pública.
 
 > Los conteos son verificados por Actions. Si difieren, prevalece `scripts/validate_graph.py`.
@@ -69,6 +71,7 @@ Tras cargar la Ola 20, el universo esperado contiene:
 - **Ola 18** — [`research/wave-18-portacelis-sat-pediments/report.md`](research/wave-18-portacelis-sat-pediments/report.md): reconstruye la declaratoria SAT de Portacelis como 139 pedimentos/834 mdp reportados, separa la estimación MCCI de ~83M L del dato primario, incorpora la vía independiente de controles volumétricos/CSD y revela un cuarteto aduanal (Juan Hermilo, Hantulio, Víctor Carretero y Carlos Cruz Lara). Nacen H34–H36 y la hipótesis de captura funcional queda formalizada como marco investigable, no conclusión.
 - **Ola 19** — [`research/wave-19-customs-agent-cross-case/report.md`](research/wave-19-customs-agent-cross-case/report.md): rompe la idea del “cuarteto homogéneo”. Juan Hermilo tiene una operación Portacelis visible dentro de la ventana SAT y la causa Ingemar le atribuye 161 carrotanques; Víctor Carretero baja a dos carrotanques y pedimentos concretos en Servicios Aduanales JR; la muestra Hantulio conocida cae un día fuera de la ventana de los 139 y Carlos Cruz Lara queda como control relativo. Nace H37 y la próxima prueba pasa a números de carro/BOL.
 - **Ola 20** — [`research/wave-20-railcar-fingerprint-bankruptcy/report.md`](research/wave-20-railcar-fingerprint-bankruptcy/report.md): busca identidad física de carrotanques. Georgia DOR asocia Ballast con reporting mark BACX, pero ninguno de los siete carros Ingemar publicados lleva ese prefijo; H37 se debilita a nivel de activo físico. Brownsville GTR entra a Chapter 7 y abre una nueva ruta documental hacia schedules, acreedores y equity holders. Nace H38 sobre Ballast como intermediario cross-client sin identidad física todavía demostrada.
+- **Ola 21** — [`research/wave-21-brownsville-gtr-bankruptcy/report.md`](research/wave-21-brownsville-gtr-bankruptcy/report.md): confirma Schedule A/B, SOFA, creditor amendment y Equity Security Holders en el Chapter 7 de Brownsville GTR, pero no inventa su contenido aún no recuperado. Entra AWJR LLC como officer corporativo histórico; 100 notices no equivalen a 100 acreedores únicos y `No Asset` no equivale a cero activos. Nace H39.
 
 ## Arquitectura del conocimiento
 
@@ -84,9 +87,9 @@ index.html
 │   └── waves/
 │       ├── wave-03-portacelis-operators.json
 │       ├── ...
-│       ├── wave-18-portacelis-sat-pediments.json
 │       ├── wave-19-customs-agent-cross-case.json
-│       └── wave-20-railcar-fingerprint-bankruptcy.json
+│       ├── wave-20-railcar-fingerprint-bankruptcy.json
+│       └── wave-21-brownsville-gtr-bankruptcy.json
 ├── research/
 │   └── wave-XX-*/
 ├── scripts/
@@ -137,6 +140,8 @@ mismo lessor reportado ≠ mismo carrotanque físico
 reporting mark actual ≠ necesariamente propietario/arrendador histórico del carro
 bancarrota ≠ irregularidad criminal
 docket confirma que un documento existe ≠ conocemos todavía su contenido
+100 notices ≠ 100 acreedores únicos
+No Asset ≠ cero activos declarados
 función estatal explotada por fraude ≠ captura estatal sin colaboración/protección demostrada
 ```
 
