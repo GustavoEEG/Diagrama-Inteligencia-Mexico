@@ -20,7 +20,7 @@ Toda conversación nueva debe leer primero ese protocolo y después consultar `m
 
 Tras cargar la Ola 19, el universo esperado contiene:
 
-- **200 nodos**;
+- **199 nodos**;
 - **331 relaciones**;
 - **191 fuentes registradas**;
 - **37 hipótesis de trabajo**;
