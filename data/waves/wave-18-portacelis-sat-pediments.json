@@ -1,0 +1,281 @@
+{
+  "wave": "18",
+  "title": "Portacelis SAT/FGR · 834M Declaratoria & Pediment Reconstruction",
+  "cutoff": "2026-09-16",
+  "sources": {
+    "S175": {
+      "t": "Vanguardia/Reforma · declaratoria SAT Portacelis: 139 pedimentos, 834 mdp y cinco personas señaladas",
+      "d": "29 ago 2026",
+      "u": "https://vanguardia.com.mx/noticias/mexico/piden-a-fgr-ir-contra-empresa-de-amigo-de-andy-lopez-ID23137719"
+    },
+    "S176": {
+      "t": "MCCI · reconstrucción Portacelis: brecha de volumen, controles volumétricos, CSD y sentencia TFJA",
+      "d": "7 sep 2026",
+      "u": "https://contralacorrupcion.mx/empresa-ligada-a-amilcar-olan-omitio-declarar-mas-de-80-millones-de-litros-de-diesel/"
+    },
+    "S177": {
+      "t": "DOF · autorización histórica de patente aduanal a Víctor José Carretero Zardeneta en Matamoros",
+      "d": "6 jul 1988",
+      "u": "https://dof.gob.mx/index.php?day=6&month=7&year=1988"
+    },
+    "S178": {
+      "t": "DOF · patente de agente aduanal a Carlos Francisco Cruz Lara para Nuevo Laredo",
+      "d": "15 dic 1993",
+      "u": "https://dof.gob.mx/index.php?day=15&month=12&year=1993"
+    },
+    "S179": {
+      "t": "Gestores Aduanales del Noreste · historia corporativa y Carlos Francisco Cruz Lara",
+      "d": "consultado 16 sep 2026",
+      "u": "https://gtaduanales.com/nosotros/"
+    },
+    "S180": {
+      "t": "La Jornada · investigación de hidrocarburos menciona a Víctor Carretero en operaciones por Matamoros e Internacional de Fundentes",
+      "d": "21 jul 2026",
+      "u": "https://www.jornada.com.mx/noticia/2026/07/21/politica/busca-la-fgr-pena-de-20-a-40-anos-de-carcel-para-ruffo"
+    },
+    "S181": {
+      "t": "Aristegui/Reforma · juez deja sin efectos orden de aprehensión contra Víctor Carretero por falta de justificación de necesidad de cautela",
+      "d": "30 jul 2026",
+      "u": "https://www.aristeguinoticias.com/3007/mexico/juez-frena-captura-en-investigacion-por-megahuachicol-fiscal-reforma/"
+    },
+    "S182": {
+      "t": "Cámara de Diputados · Código Fiscal de la Federación, controles volumétricos y régimen vigente",
+      "d": "consultado 16 sep 2026",
+      "u": "https://www.diputados.gob.mx/LeyesBiblio/ref/cff.htm"
+    },
+    "S183": {
+      "t": "MCCI · reconstrucción de 444 operaciones declaradas de Portacelis, Brownsville GTR, MG Energy e Ikon",
+      "d": "27 jul 2026",
+      "u": "https://contralacorrupcion.mx/huachicolera-investigada-por-el-fbi-surtio-a-empresa-ligada-a-amilcar-olan-el-amigo-de-andy-y-gonzalo/"
+    }
+  },
+  "nodes": [
+    {
+      "id": "portacelis_sat_fgr_2026",
+      "label": "SAT→FGR Portacelis",
+      "sub": "declaratoria 25 mar 2026 · 139 pedimentos · 834 mdp",
+      "type": "event",
+      "x": 970,
+      "y": 385,
+      "desc": "Reportes que citan la declaratoria de perjuicio del SAT señalan 139 pedimentos de Portacelis entre 11 feb y 27 jun 2025 y un perjuicio fiscal superior a 834 mdp. El SAT habría solicitado acción penal contra José Alonso Ulín y cuatro agentes aduanales. La pieza primaria completa no está en el repositorio, por lo que el contenido material permanece C/reportado.",
+      "src": ["S165", "S175"]
+    },
+    {
+      "id": "portacelis",
+      "label": "Portacelis\nGas & Oil",
+      "sub": "importadora · declaratoria SAT/FGR 2026",
+      "type": "company",
+      "desc": "Importadora constituida en 2024. Tras las olas previas, la Ola 18 añade una declaratoria de perjuicio SAT reportada por 139 pedimentos y más de 834 mdp, además de un litigio separado por controles volumétricos/CSD. Estas actuaciones no equivalen a condena y deben separarse de relaciones corporativas históricas con personas no señaladas en la declaratoria.",
+      "src": ["S10", "S165", "S175", "S176", "S183"]
+    },
+    {
+      "id": "jose_ulin",
+      "label": "José Alonso\nUlín Hernández",
+      "sub": "administrador Portacelis · señalado en declaratoria SAT",
+      "type": "person",
+      "desc": "Entró como accionista/administrador de Portacelis a fines de 2024. La declaratoria de perjuicio SAT reportada en 2026 solicita acción penal en su contra y contra cuatro agentes aduanales por operaciones de 2025. Es una actuación fiscal reportada pendiente de resolución judicial, no una condena.",
+      "src": ["S10", "S175"]
+    },
+    {
+      "id": "juan_hermilo_chavez",
+      "label": "Juan Hermilo Chávez",
+      "sub": "agente aduanal · 3677 · recurrencia cross-case",
+      "type": "person",
+      "desc": "Agente aduanal asociado en el grafo a la patente 3677. Una muestra de Portacelis documenta su capa de despacho; además aparece procesalmente en investigaciones de la rama Ingemar. La declaratoria SAT de Portacelis también lo nombra entre las personas contra quienes se solicitó acción penal. La recurrencia aumenta prioridad investigativa, no transfiere culpabilidad entre clientes.",
+      "src": ["S30", "S36", "S38", "S175", "S167"]
+    },
+    {
+      "id": "hantulio_ordonez",
+      "label": "Hantulio Ordoñez",
+      "sub": "agente aduanal · 3830 · declaratoria Portacelis",
+      "type": "person",
+      "desc": "Agente aduanal asociado a la patente 3830 en una muestra Benbros→Portacelis. La declaratoria SAT reportada en 2026 lo incluye entre los agentes contra quienes se solicitó acción penal por el universo de 139 pedimentos. Su prestación aduanal documentada y el señalamiento fiscal son hechos distintos.",
+      "src": ["S29", "S34", "S38", "S175"]
+    },
+    {
+      "id": "portacelis_volume_gap_2025",
+      "label": "Portacelis · brecha\nde volumen 2025",
+      "sub": "~83M L inferidos · NO cifra literal SAT",
+      "type": "concept",
+      "x": 1040,
+      "y": 440,
+      "desc": "Reconstrucción analítica de MCCI: a partir del perjuicio fiscal reportado de 834 mdp, IEPS/IVA y un valor promedio de importación, estima ~83 millones de litros adicionales frente a 6.683 millones declarados por ferrocarril, para un total cercano a 90 millones. Es una inferencia periodística D hasta obtener el peritaje y los 139 pedimentos.",
+      "src": ["S176"]
+    },
+    {
+      "id": "portacelis_csd_revocation_2025",
+      "label": "Portacelis · CSD\nrevocados",
+      "sub": "27 jun 2025 · controles volumétricos",
+      "type": "event",
+      "x": 1010,
+      "y": 500,
+      "desc": "MCCI reporta, con base en consulta SAT y sentencia administrativa, que los Certificados de Sello Digital de Portacelis fueron revocados el 27 jun 2025 por causal vinculada al artículo 17-H Bis tras incumplimientos en reportes de controles volumétricos. Este procedimiento es distinto de la declaratoria penal y de la suspensión Sector 13.",
+      "src": ["S176", "S182"]
+    },
+    {
+      "id": "portacelis_tfja_2026",
+      "label": "TFJA · Portacelis",
+      "sub": "15 ene 2026 · confirma resoluciones SAT",
+      "type": "event",
+      "x": 1090,
+      "y": 530,
+      "desc": "MCCI reporta que la Sala Regional en Tabasco del TFJA confirmó el 15 ene 2026 las resoluciones SAT relativas al sello digital/controles volumétricos y que la decisión quedó firme el 5 mar 2026. Falta incorporar la sentencia primaria completa al repositorio.",
+      "src": ["S176"]
+    },
+    {
+      "id": "victor_carretero",
+      "label": "Víctor José\nCarretero Zardeneta",
+      "sub": "agente aduanal · Matamoros",
+      "type": "person",
+      "x": 1260,
+      "y": 330,
+      "desc": "Agente aduanal con adscripción histórica documentada por DOF en Matamoros. La declaratoria SAT reportada de Portacelis lo incluye entre los cuatro agentes señalados. En otra investigación de hidrocarburos aparece reportado en operaciones por Matamoros; una orden de aprehensión de otro expediente fue dejada sin efectos por un juez por razones de necesidad de cautela, sin resolver el fondo de la imputación.",
+      "src": ["S175", "S177", "S180", "S181"]
+    },
+    {
+      "id": "carlos_cruz_lara",
+      "label": "Carlos Francisco\nCruz Lara",
+      "sub": "agente aduanal · Nuevo Laredo",
+      "type": "person",
+      "x": 1280,
+      "y": 420,
+      "desc": "Agente aduanal con patente histórica para Nuevo Laredo documentada por DOF y trayectoria asociada a Gestores Aduanales del Noreste. La declaratoria SAT reportada de Portacelis lo incluye entre los cuatro agentes señalados. En esta ola no se recuperó una recurrencia cross-case de igual calidad que para Juan Hermilo o Víctor Carretero.",
+      "src": ["S175", "S178", "S179"]
+    },
+    {
+      "id": "carretero_matamoros_case_2026",
+      "label": "Caso Carretero ·\nMatamoros",
+      "sub": "2023/2026 · investigación separada",
+      "type": "event",
+      "x": 1370,
+      "y": 315,
+      "desc": "La Jornada reportó que una investigación federal distinta atribuye a Víctor Carretero trámites de dos cargamentos ingresados por Matamoros en 2023 declarados como aceite lubricante que, según peritajes citados, resultaron gasolina y diésel. En otro expediente por 144 millones de litros, un juez dejó sin efectos una orden de aprehensión por falta de justificación de necesidad de cautela. Ninguna de estas actuaciones equivale a condena.",
+      "src": ["S180", "S181"]
+    }
+  ],
+  "edges": [
+    {
+      "id": "w18e01",
+      "a": "portacelis_sat_fgr_2026",
+      "b": "portacelis",
+      "g": "C",
+      "rel": "declaratoria de perjuicio SAT reportada · 139 pedimentos",
+      "why": "Fuentes que citan la declaratoria SAT reportan 139 pedimentos entre 11 feb y 27 jun 2025 y daño fiscal >834 mdp. Falta incorporar la pieza primaria y anexos.",
+      "src": ["S165", "S175"]
+    },
+    {
+      "id": "w18e02",
+      "a": "portacelis_sat_fgr_2026",
+      "b": "jose_ulin",
+      "g": "C",
+      "rel": "acción penal solicitada por SAT según declaratoria reportada",
+      "why": "La publicación de la declaratoria identifica a Ulín como administrador contra quien SAT solicita acción penal. No constituye sentencia ni vinculación a proceso por sí sola.",
+      "src": ["S175"]
+    },
+    {
+      "id": "w18e03",
+      "a": "portacelis_sat_fgr_2026",
+      "b": "juan_hermilo_chavez",
+      "g": "C",
+      "rel": "agente aduanal señalado en declaratoria reportada",
+      "why": "Juan Hermilo aparece entre los agentes contra quienes SAT habría solicitado acción penal en el expediente Portacelis; esto es distinto de su servicio aduanal B ya documentado.",
+      "src": ["S175"]
+    },
+    {
+      "id": "w18e04",
+      "a": "portacelis_sat_fgr_2026",
+      "b": "hantulio_ordonez",
+      "g": "C",
+      "rel": "agente aduanal señalado en declaratoria reportada",
+      "why": "Hantulio aparece entre los agentes contra quienes SAT habría solicitado acción penal en el expediente Portacelis. La inclusión no determina qué pedimentos concretos tramitó ni culpabilidad.",
+      "src": ["S175"]
+    },
+    {
+      "id": "w18e05",
+      "a": "portacelis_sat_fgr_2026",
+      "b": "victor_carretero",
+      "g": "C",
+      "rel": "agente aduanal señalado en declaratoria reportada",
+      "why": "La declaratoria reportada incluye a Víctor Carretero entre los agentes señalados. Falta asignar pedimentos individuales y resultado procesal.",
+      "src": ["S175"]
+    },
+    {
+      "id": "w18e06",
+      "a": "portacelis_sat_fgr_2026",
+      "b": "carlos_cruz_lara",
+      "g": "C",
+      "rel": "agente aduanal señalado en declaratoria reportada",
+      "why": "La declaratoria reportada incluye a Carlos Francisco Cruz Lara entre los agentes señalados. La arista registra el acto fiscal reportado, no una condena.",
+      "src": ["S175"]
+    },
+    {
+      "id": "w18e07",
+      "a": "portacelis",
+      "b": "portacelis_volume_gap_2025",
+      "g": "D",
+      "rel": "brecha de volumen inferida desde perjuicio fiscal",
+      "why": "MCCI estima ~83M L adicionales a partir de 834 mdp, IEPS/IVA y valor promedio; el cálculo no equivale a volumen medido por SAT y necesita peritaje/pedimentos para validarse.",
+      "src": ["S176"]
+    },
+    {
+      "id": "w18e08",
+      "a": "portacelis",
+      "b": "portacelis_csd_revocation_2025",
+      "g": "B",
+      "rel": "revocación/restricción de CSD por controles volumétricos reportada con respaldo administrativo",
+      "why": "MCCI reconstruye consultas SAT y litigio TFJA sobre incumplimiento de controles volumétricos. Es un procedimiento diferente del penal y no demuestra fraude en todos los pedimentos.",
+      "src": ["S176", "S182"]
+    },
+    {
+      "id": "w18e09",
+      "a": "portacelis_csd_revocation_2025",
+      "b": "portacelis_tfja_2026",
+      "g": "B",
+      "rel": "resoluciones SAT confirmadas por TFJA según sentencia reportada",
+      "why": "MCCI reporta sentencia de 15 ene 2026 que confirma la actuación SAT y firmeza desde 5 mar. Falta copia primaria completa para elevar a A.",
+      "src": ["S176"]
+    },
+    {
+      "id": "w18e10",
+      "a": "victor_carretero",
+      "b": "carretero_matamoros_case_2026",
+      "g": "C",
+      "rel": "imputación/investigación separada por operaciones en Matamoros",
+      "why": "La Jornada reporta una investigación que atribuye a Carretero trámites de cargamentos en 2023 con discrepancia entre mercancía declarada y peritada; la situación procesal incluye contraevidencia sobre una orden de captura en otro expediente.",
+      "src": ["S180", "S181"]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H34",
+      "title": "Recurrencia de agentes aduanales entre expedientes identifica infraestructura profesional de alto valor",
+      "level": "Nueva / investigable; no prueba coordinación ni culpabilidad colectiva",
+      "support": "La declaratoria Portacelis reportada nombra cuatro agentes; Juan Hermilo y Víctor Carretero aparecen además en investigaciones independientes de hidrocarburos. La recurrencia permite diseñar cruces de pedimentos por operador.",
+      "against": "Agentes de alto volumen atienden numerosos clientes y una misma aduana/producto puede producir coincidencias ordinarias. Carlos Cruz Lara no mostró en esta ola recurrencia comparable y la tasa base sigue desconocida.",
+      "missing": "Los 139 pedimentos asignados por agente/patente, universo total de clientes por agente, carros, terminales, proveedores, fechas y comparación contra tasa base."
+    },
+    {
+      "id": "H35",
+      "title": "Divergencia entre pedimento, guía y control volumétrico es el mecanismo transaccional central a probar",
+      "level": "Nueva / investigable",
+      "support": "La declaratoria SAT reportada atribuye información falsa y daño fiscal; MCCI calcula una brecha grande entre volumen ferroviario declarado y el inferido desde el daño; un litigio separado documenta incumplimientos de controles volumétricos.",
+      "against": "Los ~83M litros son una inferencia, no un volumen primario del SAT; los universos de 141 shipments y 139 pedimentos no coinciden exactamente; la cuantificación fiscal puede depender de variables distintas a litros.",
+      "missing": "Peritaje del 2 sep 2025, lista de 139 pedimentos, guías/BOL, números de carro, mediciones, controles volumétricos, CFDI y liquidación fiscal por operación."
+    },
+    {
+      "id": "H36",
+      "title": "Captura funcional de controles estatales como mecanismo de generación de renta privada",
+      "level": "Nueva hipótesis madre / E — investigable, no demostrada",
+      "support": "El mecanismo alegado en Portacelis depende de funciones formales del Estado —pedimento, volumen, impuestos, controles volumétricos y fiscalización— y permite formular una hipótesis general sobre rentas privadas generadas mediante explotación o captura de controles públicos.",
+      "against": "Fraude privado e incumplimiento pueden aprovechar debilidades sin colaboración estatal. Ola 18 no demuestra sobornos, protección, instrucciones, nombramientos manipulados ni coordinación de funcionarios con privados.",
+      "missing": "Evidencia de colaboración/omisión deliberada de funcionarios, pagos, beneficios, instrucciones, nombramientos o protección; comparación con casos donde el fraude ocurrió sin captura estatal."
+    }
+  ],
+  "timeline": [
+    ["2025-02-11", "Inicio del periodo de 139 pedimentos Portacelis descrito en la declaratoria SAT reportada."],
+    ["2025-06-27", "Fin del periodo SAT reportado y fecha en que MCCI ubica revocación de CSD de Portacelis."],
+    ["2026-01-15", "TFJA confirma resoluciones SAT sobre CSD/controles volumétricos, según sentencia reconstruida por MCCI."],
+    ["2026-03-25", "SAT presenta declaratoria de perjuicio Portacelis ante FGR, según Reforma y publicaciones que citan el documento."],
+    ["2026-09-07", "MCCI publica estimación de brecha de volumen derivada del perjuicio fiscal y reconstrucción del litigio de controles volumétricos."]
+  ]
+}

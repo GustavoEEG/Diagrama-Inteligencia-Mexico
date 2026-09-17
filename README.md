@@ -16,15 +16,15 @@ Toda conversación nueva debe leer primero ese protocolo y después consultar `m
 
 ## Estado vigente
 
-**Ola 0–17** · corte de investigación: **16 de septiembre de 2026**.
+**Ola 0–18** · corte de investigación: **16 de septiembre de 2026**.
 
-Tras cargar la Ola 17, el universo esperado contiene:
+Tras cargar la Ola 18, el universo esperado contiene:
 
-- **185 nodos**;
-- **305 relaciones**;
-- **174 fuentes registradas**;
-- **33 hipótesis de trabajo**;
-- **16 overlays**;
+- **191 nodos**;
+- **315 relaciones**;
+- **183 fuentes registradas**;
+- **36 hipótesis de trabajo**;
+- **17 overlays**;
 - escala epistemológica A–G;
 - análisis reproducible A–C vs A–G;
 - baseline, tasa base, visibilidad y denominador;
@@ -36,7 +36,10 @@ Tras cargar la Ola 17, el universo esperado contiene:
 - proveedor compartido ≠ coordinación entre clientes;
 - proveedor de alta frecuencia → medir denominador antes de llamar anomalía;
 - acusación/investigación/proceso ≠ condena;
-- contraevidencia y derechos de réplica incorporados al mismo nivel de trazabilidad.
+- contraevidencia y derechos de réplica incorporados al mismo nivel de trazabilidad;
+- **perjuicio fiscal → volumen inferido ≠ volumen medido por autoridad**;
+- **agente repetido en dos causas ≠ clientes coordinados**;
+- **función estatal explotada por fraude ≠ función estatal capturada** sin evidencia de colaboración/protección pública.
 
 > Los conteos son verificados por Actions. Si difieren, prevalece `scripts/validate_graph.py`.
 
@@ -57,7 +60,8 @@ Tras cargar la Ola 17, el universo esperado contiene:
 - **Ola 14** — [`research/wave-14-cross-list-intelligence/report.md`](research/wave-14-cross-list-intelligence/report.md): cruce 334×CFIC selecciona Energética Carvel por recurrencia multi-expediente independiente.
 - **Ola 15** — [`research/wave-15-carvel-longitudinal/report.md`](research/wave-15-carvel-longitudinal/report.md): continuidad Carvel 2016–2026; operador, Porteadora y permisos reales; continuidad operacional ≠ continuidad ilícita.
 - **Ola 16** — [`research/wave-16-carvel-us-mx-supply-chain/report.md`](research/wave-16-carvel-us-mx-supply-chain/report.md): SENER revela Vitol/L Energy, relación Karina↔L Energy y upstream multicanal; L Energy emerge como puente.
-- **Ola 17** — [`research/wave-17-lenergy-cross-island-news-delta/report.md`](research/wave-17-lenergy-cross-island-news-delta/report.md): L Energy resulta proveedor de alta frecuencia (2,166 registros hacia México), se incorpora L.E. International Fuel Supply y controles de mercado; el news-delta 20 ago–16 sep abre Portacelis SAT→FGR, Deer Park→Ingemar→Crismon y Farías→nombramientos/aduanas. FGR niega órdenes de aprehensión contra Andy y Olán al 16 sep.
+- **Ola 17** — [`research/wave-17-lenergy-cross-island-news-delta/report.md`](research/wave-17-lenergy-cross-island-news-delta/report.md): L Energy resulta proveedor de alta frecuencia; se incorpora L.E. International Fuel Supply y controles de mercado; el news-delta abre Portacelis SAT→FGR, Deer Park→Ingemar→Crismon y Farías→nombramientos/aduanas. FGR niega órdenes de aprehensión contra Andy y Olán al 16 sep.
+- **Ola 18** — [`research/wave-18-portacelis-sat-pediments/report.md`](research/wave-18-portacelis-sat-pediments/report.md): reconstruye la declaratoria SAT de Portacelis como 139 pedimentos/834 mdp reportados, separa la estimación MCCI de ~83M L del dato primario, incorpora la vía independiente de controles volumétricos/CSD y revela un cuarteto aduanal (Juan Hermilo, Hantulio, Víctor Carretero y Carlos Cruz Lara). Nacen H34–H36 y la hipótesis de captura funcional queda formalizada como marco investigable, no conclusión.
 
 ## Arquitectura del conocimiento
 
@@ -73,9 +77,9 @@ index.html
 │   └── waves/
 │       ├── wave-03-portacelis-operators.json
 │       ├── ...
-│       ├── wave-15-carvel-longitudinal.json
 │       ├── wave-16-carvel-us-mx-supply-chain.json
-│       └── wave-17-lenergy-cross-island-news-delta.json
+│       ├── wave-17-lenergy-cross-island-news-delta.json
+│       └── wave-18-portacelis-sat-pediments.json
 ├── research/
 │   └── wave-XX-*/
 ├── scripts/
@@ -118,6 +122,9 @@ contrato presentado a regulador ≠ operación ejecutada
 proveedor compartido ≠ coordinación entre clientes
 proveedor de alta frecuencia → denominador antes de anomalía
 versión oficial posterior + contraevidencia → actualizar el estado, no conservar el rumor más dramático
+perjuicio fiscal → volumen estimado ≠ medición física/autoridad
+agente repetido en dos causas ≠ clientes coordinados
+función estatal explotada por fraude ≠ captura estatal sin colaboración/protección demostrada
 ```
 
 La existencia de una conexión debe probarse por separado de su interpretación causal. En expedientes grandes, primero se clasifica el rol de cada entidad y después se calcula o interpreta la red.
