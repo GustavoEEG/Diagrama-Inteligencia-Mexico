@@ -16,15 +16,15 @@ Toda conversación nueva debe leer primero ese protocolo y después consultar `m
 
 ## Estado vigente
 
-**Ola 0–18** · corte de investigación: **16 de septiembre de 2026**.
+**Ola 0–19** · corte de investigación: **16 de septiembre de 2026**.
 
-Tras cargar la Ola 18, el universo esperado contiene:
+Tras cargar la Ola 19, el universo esperado contiene:
 
-- **191 nodos**;
-- **315 relaciones**;
-- **183 fuentes registradas**;
-- **36 hipótesis de trabajo**;
-- **17 overlays**;
+- **200 nodos**;
+- **331 relaciones**;
+- **191 fuentes registradas**;
+- **37 hipótesis de trabajo**;
+- **18 overlays**;
 - escala epistemológica A–G;
 - análisis reproducible A–C vs A–G;
 - baseline, tasa base, visibilidad y denominador;
@@ -39,6 +39,8 @@ Tras cargar la Ola 18, el universo esperado contiene:
 - contraevidencia y derechos de réplica incorporados al mismo nivel de trazabilidad;
 - **perjuicio fiscal → volumen inferido ≠ volumen medido por autoridad**;
 - **agente repetido en dos causas ≠ clientes coordinados**;
+- **misma patente dentro de la misma ventana ≠ mismo pedimento cuestionado**;
+- **mismo agente + mismo corredor ≠ mismo activo físico** sin carro/BOL/pedimento común;
 - **función estatal explotada por fraude ≠ función estatal capturada** sin evidencia de colaboración/protección pública.
 
 > Los conteos son verificados por Actions. Si difieren, prevalece `scripts/validate_graph.py`.
@@ -62,6 +64,7 @@ Tras cargar la Ola 18, el universo esperado contiene:
 - **Ola 16** — [`research/wave-16-carvel-us-mx-supply-chain/report.md`](research/wave-16-carvel-us-mx-supply-chain/report.md): SENER revela Vitol/L Energy, relación Karina↔L Energy y upstream multicanal; L Energy emerge como puente.
 - **Ola 17** — [`research/wave-17-lenergy-cross-island-news-delta/report.md`](research/wave-17-lenergy-cross-island-news-delta/report.md): L Energy resulta proveedor de alta frecuencia; se incorpora L.E. International Fuel Supply y controles de mercado; el news-delta abre Portacelis SAT→FGR, Deer Park→Ingemar→Crismon y Farías→nombramientos/aduanas. FGR niega órdenes de aprehensión contra Andy y Olán al 16 sep.
 - **Ola 18** — [`research/wave-18-portacelis-sat-pediments/report.md`](research/wave-18-portacelis-sat-pediments/report.md): reconstruye la declaratoria SAT de Portacelis como 139 pedimentos/834 mdp reportados, separa la estimación MCCI de ~83M L del dato primario, incorpora la vía independiente de controles volumétricos/CSD y revela un cuarteto aduanal (Juan Hermilo, Hantulio, Víctor Carretero y Carlos Cruz Lara). Nacen H34–H36 y la hipótesis de captura funcional queda formalizada como marco investigable, no conclusión.
+- **Ola 19** — [`research/wave-19-customs-agent-cross-case/report.md`](research/wave-19-customs-agent-cross-case/report.md): rompe la idea del “cuarteto homogéneo”. Juan Hermilo tiene una operación Portacelis visible dentro de la ventana SAT y la causa Ingemar le atribuye 161 carrotanques; Víctor Carretero baja a dos carrotanques y pedimentos concretos en Servicios Aduanales JR; la muestra Hantulio conocida cae un día fuera de la ventana de los 139 y Carlos Cruz Lara queda como control relativo. Nace H37 y la próxima prueba pasa a números de carro/BOL.
 
 ## Arquitectura del conocimiento
 
@@ -77,9 +80,9 @@ index.html
 │   └── waves/
 │       ├── wave-03-portacelis-operators.json
 │       ├── ...
-│       ├── wave-16-carvel-us-mx-supply-chain.json
 │       ├── wave-17-lenergy-cross-island-news-delta.json
-│       └── wave-18-portacelis-sat-pediments.json
+│       ├── wave-18-portacelis-sat-pediments.json
+│       └── wave-19-customs-agent-cross-case.json
 ├── research/
 │   └── wave-XX-*/
 ├── scripts/
@@ -124,6 +127,8 @@ proveedor de alta frecuencia → denominador antes de anomalía
 versión oficial posterior + contraevidencia → actualizar el estado, no conservar el rumor más dramático
 perjuicio fiscal → volumen estimado ≠ medición física/autoridad
 agente repetido en dos causas ≠ clientes coordinados
+misma patente dentro de una ventana ≠ mismo pedimento investigado
+mismo agente + mismo corredor ≠ activo físico común sin carro/BOL/pedimento compartido
 función estatal explotada por fraude ≠ captura estatal sin colaboración/protección demostrada
 ```
 
