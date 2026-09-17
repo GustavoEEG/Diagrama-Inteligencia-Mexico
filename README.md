@@ -12,53 +12,52 @@ Repositorio vivo para construir y versionar un **Intelligence Link Analysis** so
 
 La fuente metodológica canónica es [`docs/PROTOCOLO_MAESTRO.md`](docs/PROTOCOLO_MAESTRO.md).
 
-**Toda conversación nueva que continúe este proyecto debe leer primero ese protocolo y después consultar el estado actual de `main`, `data/manifest.json`, los paquetes de `data/waves/` y los PR recientes.** Las conversaciones son sesiones temporales; el repositorio es la memoria persistente del proyecto.
+Toda conversación nueva debe leer primero ese protocolo y después consultar `main`, `data/manifest.json`, los paquetes de `data/waves/` y los PR recientes. Las conversaciones son sesiones temporales; el repositorio es la memoria persistente del proyecto.
 
 ## Estado vigente
 
-**Ola 0–16** · corte de investigación: **20 de agosto de 2026**.
+**Ola 0–17** · corte de investigación: **16 de septiembre de 2026**.
 
-Tras integrar la Ola 16, el universo esperado contiene:
+Tras cargar la Ola 17, el universo esperado contiene:
 
-- **168 nodos**;
-- **282 relaciones**;
-- **156 fuentes registradas**;
-- **31 hipótesis de trabajo**;
-- **15 overlays**;
+- **185 nodos**;
+- **305 relaciones**;
+- **174 fuentes registradas**;
+- **33 hipótesis de trabajo**;
+- **16 overlays**;
 - escala epistemológica A–G;
 - análisis reproducible A–C vs A–G;
-- control de baseline, tasa base, visibilidad y denominador;
-- control explícito de **independencia de fuentes**;
-- separación entre **existencia de un puente** y **significado causal/criminal del puente**;
-- separación de **rol procesal/comercial** antes de inferir redes desde una causa penal;
-- control de **recurrencia entre expedientes** sin asumir continuidad procesal;
-- separación explícita entre **universo de inteligencia, acusación, imputación, proceso y condena**;
-- modelado de sanciones/suspensiones por su **causal jurídica exacta**;
-- separación de pistas de enforcement que comparten intermediario pero no transacción;
-- control de **provenance entre listas** para distinguir convergencia independiente de reciclaje de inteligencia;
-- separación entre **continuidad operacional longitudinal** y **continuidad de conducta ilícita**;
-- separación entre **contrato presentado en expediente regulatorio** y **transacción/importación efectivamente ejecutada**;
-- control de **proveedor compartido** mediante denominador antes de inferir coordinación entre clientes.
+- baseline, tasa base, visibilidad y denominador;
+- independencia y provenance de fuentes/listas;
+- separación entre existencia de puente y significado causal/criminal;
+- separación de rol procesal/comercial antes de interpretar redes;
+- continuidad operacional ≠ continuidad ilícita;
+- contrato presentado a regulador ≠ operación ejecutada;
+- proveedor compartido ≠ coordinación entre clientes;
+- proveedor de alta frecuencia → medir denominador antes de llamar anomalía;
+- acusación/investigación/proceso ≠ condena;
+- contraevidencia y derechos de réplica incorporados al mismo nivel de trazabilidad.
 
 > Los conteos son verificados por Actions. Si difieren, prevalece `scripts/validate_graph.py`.
 
 ### Olas documentadas
 
-- **Ola 2** — [`research/wave-02-amilcar-olan/report.md`](research/wave-02-amilcar-olan/report.md): Juan Carlos de la Cruz Murillo como puente corporativo entre varias sociedades del universo de Amílcar Olán y la constitución inicial de Portacelis.
-- **Ola 3** — [`research/wave-03-portacelis-operators/report.md`](research/wave-03-portacelis-operators/report.md): continuidad operativa investigable y capa aduanal a operadores/patentes concretos.
+- **Ola 2** — [`research/wave-02-amilcar-olan/report.md`](research/wave-02-amilcar-olan/report.md): Juan Carlos de la Cruz Murillo como puente corporativo del universo de Amílcar Olán y la constitución inicial de Portacelis.
+- **Ola 3** — [`research/wave-03-portacelis-operators/report.md`](research/wave-03-portacelis-operators/report.md): continuidad operativa y patentes aduanales 3830/3807/3677; compartir agente no demuestra coordinación.
 - **Ola 4** — [`research/wave-04-portacelis-money-trail/report.md`](research/wave-04-portacelis-money-trail/report.md): money trail parcial y techo OSINT para beneficiario/control/pagos.
-- **Ola 5** — [`research/wave-05-operation-files/report.md`](research/wave-05-operation-files/report.md): targets documentales RPC/SIGER, SENER, SAT Sector 13 y expediente del cateo a Ikon.
+- **Ola 5** — [`research/wave-05-operation-files/report.md`](research/wave-05-operation-files/report.md): targets RPC/SIGER, SENER, SAT Sector 13 y expediente Ikon.
 - **Ola 6** — [`research/wave-06-reverse-graph/report.md`](research/wave-06-reverse-graph/report.md): investigación inversa, centralidad y patente 3677 como puente investigativo.
-- **Ola 7** — [`research/wave-07-customs-baseline/report.md`](research/wave-07-customs-baseline/report.md): grupo de control 3677/3830/3807; compartir agente no demuestra coordinación.
-- **Ola 8** — [`research/wave-08-customs-denominator/report.md`](research/wave-08-customs-denominator/report.md): Full Portacelis Pediment Set no reconstruible con OSINT abierto; H13 estacionada y H14 formaliza sesgo de visibilidad/agregación.
-- **Ola 9** — [`research/wave-09-femdo-353/report.md`](research/wave-09-femdo-353/report.md): autenticación del supuesto oficio FEMDO de 353 entidades. Resultado: autenticación parcial del contexto, no del documento; el lead permanece C. Se añade H16: republicación ≠ corroboración independiente.
-- **Ola 10** — [`research/wave-10-identify-the-three/report.md`](research/wave-10-identify-the-three/report.md): intenta identificar las tres empresas no nombradas por FGR en los cateos FEMDO del 29 may 2026. El trío sigue sin identificar, pero Maquiladora de Lubricantes emerge como puente independiente entre Los Petrofactureros, Puerto Dos Bocas/Frontera y la causa penal 325/2025.
-- **Ola 11** — [`research/wave-11-maquiladora-supply-chain/report.md`](research/wave-11-maquiladora-supply-chain/report.md): el proveedor concreto citado por la causa 325 no se identifica; se reconstruye un corredor independiente Galem↔Gutasa/Ecocarburante y Ecocarburante↔AIFA/Sedena↔Mefra/IPS. Nace H21: contaminación retrospectiva de contratos públicos.
-- **Ola 12** — [`research/wave-12-extract-20-tomes/report.md`](research/wave-12-extract-20-tomes/report.md): identifica a **Karina Melissa Guerrero Rodríguez como proveedor histórico reportado de Maquiladora en 2020**, pero conserva abierta la identidad del proveedor específico al que alude la causa 325. Incorpora la carpeta `FED/TAM/REY/334/2021`, la rama Nexoil/Karina/Marvic y **Grupo Potesta** como nodo comercial-financiero reportado de la 325 con operaciones hacia **Vector Casa de Bolsa**. Se añaden H22 (recurrencia histórica) y H23 (proveedor histórico ≠ proveedor imputado sin documento puente).
-- **Ola 13** — [`research/wave-13-potesta-vector-555/report.md`](research/wave-13-potesta-vector-555/report.md): somete a falsación la rama Potesta→Vector y el universo CFIC 555/108. Confirma actividad regulatoria real de Potesta, corrige su suspensión SAT de 2021 a causal IV por inactividad >12 meses, separa la pista FinCEN/opioides de la pista mexicana Potesta/huachicol y formaliza H24 (convergencia CFIC-108) y H25 (separación de pistas Vector).
-- **Ola 14** — [`research/wave-14-cross-list-intelligence/report.md`](research/wave-14-cross-list-intelligence/report.md): cruza CFIC-108, FEMDO-353 publicado parcialmente, 334/2021 y el grafo. El anexo 353 incompleto impide un triple match nominal nuevo; el cruce 334∩108 selecciona **Energética Carvel** como primer target nuevo con antecedente adicional de 2018. Se añaden H26 (recurrencia como priorizador) y H27 (reciclaje histórico como explicación rival), con Diesel Max/Faja/Paje como controles.
-- **Ola 15** — [`research/wave-15-carvel-longitudinal/report.md`](research/wave-15-carvel-longitudinal/report.md): reconstruye la continuidad Carvel 2016–2026. Confirma permisos SENER pre-2018, continuidad de Carlos Alberto Velázquez Nieto, el brazo transportista Porteadora Carvel y corrige `H/22701/COM/2019` a **Vigente** según el listado actual de CRE. La continuidad operacional se separa de cualquier continuidad ilícita no demostrada; nacen H28 y H29 y Carvel Energy Inc. queda como target estadounidense prioritario.
-- **Ola 16** — [`research/wave-16-carvel-us-mx-supply-chain/report.md`](research/wave-16-carvel-us-mx-supply-chain/report.md): expedientes primarios SENER de 2019 revelan contratos/proveeduría declarada de Carvel con **Vitol Inc., Vitol Marketing México y L. Energy International**; L. Energy aparece también en una solicitud independiente de **Karina Guerrero**, cuyo expediente menciona facturas a Carvel y contrato con Maquiladora. Se fortalece la relación histórica Karina↔Carvel/Maquiladora sin equipararla a una operación ilícita y L. Energy emerge como puente de alto valor hacia la isla Ingemar. Nacen H30 (upstream multicanal) y H31 (L. Energy como puente comercial a medir con denominador).
+- **Ola 7** — [`research/wave-07-customs-baseline/report.md`](research/wave-07-customs-baseline/report.md): baseline de patentes 3677/3830/3807.
+- **Ola 8** — [`research/wave-08-customs-denominator/report.md`](research/wave-08-customs-denominator/report.md): full pediment set no reconstruible con OSINT; muestra observable ≠ universo.
+- **Ola 9** — [`research/wave-09-femdo-353/report.md`](research/wave-09-femdo-353/report.md): autenticación parcial del supuesto universo FEMDO-353; republicación ≠ corroboración.
+- **Ola 10** — [`research/wave-10-identify-the-three/report.md`](research/wave-10-identify-the-three/report.md): Maquiladora de Lubricantes emerge como puente independiente entre varias islas y la causa 325/2025.
+- **Ola 11** — [`research/wave-11-maquiladora-supply-chain/report.md`](research/wave-11-maquiladora-supply-chain/report.md): corredor Galem↔Gutasa/Ecocarburante y Ecocarburante↔AIFA/Sedena↔Mefra/IPS; investigación posterior no contamina contratos históricos.
+- **Ola 12** — [`research/wave-12-extract-20-tomes/report.md`](research/wave-12-extract-20-tomes/report.md): Karina Guerrero como proveedor histórico reportado de Maquiladora; carpeta 334/2021 y rama Potesta→Vector.
+- **Ola 13** — [`research/wave-13-potesta-vector-555/report.md`](research/wave-13-potesta-vector-555/report.md): falsación Potesta→Vector, causal de suspensión y separación de pistas financieras.
+- **Ola 14** — [`research/wave-14-cross-list-intelligence/report.md`](research/wave-14-cross-list-intelligence/report.md): cruce 334×CFIC selecciona Energética Carvel por recurrencia multi-expediente independiente.
+- **Ola 15** — [`research/wave-15-carvel-longitudinal/report.md`](research/wave-15-carvel-longitudinal/report.md): continuidad Carvel 2016–2026; operador, Porteadora y permisos reales; continuidad operacional ≠ continuidad ilícita.
+- **Ola 16** — [`research/wave-16-carvel-us-mx-supply-chain/report.md`](research/wave-16-carvel-us-mx-supply-chain/report.md): SENER revela Vitol/L Energy, relación Karina↔L Energy y upstream multicanal; L Energy emerge como puente.
+- **Ola 17** — [`research/wave-17-lenergy-cross-island-news-delta/report.md`](research/wave-17-lenergy-cross-island-news-delta/report.md): L Energy resulta proveedor de alta frecuencia (2,166 registros hacia México), se incorpora L.E. International Fuel Supply y controles de mercado; el news-delta 20 ago–16 sep abre Portacelis SAT→FGR, Deer Park→Ingemar→Crismon y Farías→nombramientos/aduanas. FGR niega órdenes de aprehensión contra Andy y Olán al 16 sep.
 
 ## Arquitectura del conocimiento
 
@@ -73,20 +72,10 @@ index.html
 │   ├── timeline.json
 │   └── waves/
 │       ├── wave-03-portacelis-operators.json
-│       ├── wave-04-portacelis-money-trail.json
-│       ├── wave-05-operation-files.json
-│       ├── wave-06-reverse-graph.json
-│       ├── wave-07-customs-baseline.json
-│       ├── wave-08-customs-denominator.json
-│       ├── wave-09-femdo-353.json
-│       ├── wave-10-identify-the-three.json
-│       ├── wave-11-maquiladora-supply-chain.json
-│       ├── wave-12-extract-20-tomes.json
-│       ├── wave-12-vector-context.json
-│       ├── wave-13-potesta-vector-555.json
-│       ├── wave-14-cross-list-intelligence.json
+│       ├── ...
 │       ├── wave-15-carvel-longitudinal.json
-│       └── wave-16-carvel-us-mx-supply-chain.json
+│       ├── wave-16-carvel-us-mx-supply-chain.json
+│       └── wave-17-lenergy-cross-island-news-delta.json
 ├── research/
 │   └── wave-XX-*/
 ├── scripts/
@@ -97,7 +86,7 @@ index.html
     └── methodology.md
 ```
 
-Los overlays son paquetes versionados. `data/manifest.json` define cuáles carga el tablero. Si un overlay contiene un `id` existente, actualiza ese objeto en tiempo de carga; IDs nuevos amplían el universo. `wave-12-vector-context.json` es un overlay técnico de contexto para materializar Vector como entidad referenciable; no representa una ola investigativa distinta.
+Los overlays son paquetes versionados. `data/manifest.json` define cuáles carga el tablero. Si un overlay contiene un `id` existente, actualiza ese objeto en tiempo de carga; IDs nuevos amplían el universo.
 
 ## Principios centrales
 
@@ -107,99 +96,36 @@ Los overlays son paquetes versionados. `data/manifest.json` define cuáles carga
 
 **Falta de evidencia abierta ≠ evidencia de conspiración.** Cada hipótesis importante debe señalar qué documentos o mediciones podrían matarla.
 
-Para puentes profesionales recurrentes:
-
 ```text
 coincidencia → baseline → tasa base → control por volumen → hipótesis de enriquecimiento
 ```
 
 **Sin denominador no hay anomalía cuantitativa.**
 
-Desde Ola 8:
+Reglas acumuladas:
 
 ```text
 muestra observable ≠ universo
 shipment ≠ pedimento ≠ ferrotanque ≠ operación reconstruida
-ausencia en una base ≠ ausencia en la realidad
-```
-
-Desde Ola 9:
-
-```text
-fuente originaria → republicaciones → corroboraciones independientes
 10 republicaciones de una exclusiva ≠ 10 fuentes independientes
-```
-
-Desde Ola 10:
-
-```text
 puente factual ≠ mando común
-empresa presente en dos islas ≠ las islas son una sola red
-prestación profesional ≠ conocimiento de la conducta del cliente
-puerto Dos Bocas ≠ Refinería Dos Bocas
-```
-
-Desde Ola 11:
-
-```text
 misma causa penal ≠ mismo rol
-empresa investigada ≠ proveedor ≠ cliente ≠ transportista ≠ contraparte ≠ simple mención
-investigación posterior ≠ ilicitud retrospectiva de todos los contratos históricos
-contrato público → suministro concreto → documento/lote → irregularidad → conocimiento
-```
-
-Desde Ola 12:
-
-```text
-recurrencia entre expedientes → mayor prioridad investigativa, no continuidad procesal automática
-proveedor histórico ≠ proveedor citado por una causa posterior sin reconciliar fecha/CFDI/pedimento
-lista de 555 ≠ lista de 353 hasta obtener ambos universos y cruzarlos nominalmente
-relación con intermediario financiero ≠ lavado probado en cada operación
-```
-
-Desde Ola 13:
-
-```text
-listado/análisis de inteligencia ≠ acusado ≠ imputado ≠ vinculado a proceso ≠ condenado
-suspensión administrativa → modelar causal jurídica exacta antes de inferir significado
-pistas de enforcement que comparten intermediario ≠ mismo esquema sin puente transaccional
-permiso/actividad regulada real ≠ exculpación de todas las operaciones
-```
-
-Desde Ola 14:
-
-```text
-recurrencia nominal entre listas → prioridad, no corroboración automática
-intersección de listas sin provenance ≠ observaciones independientes
-anexo incompleto → no inferir ausencia nominal
-actividad regulada real + investigación recurrente pueden coexistir
-```
-
-Desde Ola 15:
-
-```text
+recurrencia entre expedientes → prioridad, no continuidad procesal
+listado de inteligencia ≠ acusado ≠ imputado ≠ vinculado ≠ condenado
+suspensión administrativa → modelar causal jurídica exacta
 continuidad operacional ≠ continuidad ilícita
-mismo operador/empresa a través del tiempo ≠ mismo hecho delictivo a través del tiempo
-proyecto de caducidad ≠ caducidad final sin resolución/estatus vigente reconciliado
-integración vertical alegada → registro corporativo + pedimento + transporte + almacenamiento antes de inferir flujo
-```
-
-Desde Ola 16:
-
-```text
 contrato presentado a regulador ≠ operación ejecutada
-permiso aprobado posterior ≠ proveedor de una solicitud previa
 proveedor compartido ≠ coordinación entre clientes
-factura/contrato citado por autoridad → fortalece existencia de relación, no valida automáticamente monto, entrega o ilicitud
-proveedor compartido → reconstruir clientela/volumen → denominador → buscar coincidencia transaccional específica
+proveedor de alta frecuencia → denominador antes de anomalía
+versión oficial posterior + contraevidencia → actualizar el estado, no conservar el rumor más dramático
 ```
 
-La existencia de una conexión debe probarse por separado de la interpretación causal de esa conexión. En expedientes grandes, **primero se clasifica el rol de cada entidad y después se calcula o interpreta la red**.
+La existencia de una conexión debe probarse por separado de su interpretación causal. En expedientes grandes, primero se clasifica el rol de cada entidad y después se calcula o interpreta la red.
 
 ## Flujo de investigación
 
 ```text
-investigación → fuentes → independencia de fuentes → clasificación de rol → grafo A–C/A–G → puentes → red team/baseline → denominador/visibilidad → provenance entre listas → continuidad temporal → hipótesis → targets documentales → overlay → PR → validación → merge
+investigación → fuentes → independencia → clasificación de rol → grafo A–C/A–G → puentes → red team/baseline → denominador → provenance → continuidad temporal → hipótesis → targets documentales → overlay → PR → validación → merge
 ```
 
 ## Validación y análisis automáticos
